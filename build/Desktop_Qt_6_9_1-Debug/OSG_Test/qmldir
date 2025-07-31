@@ -1,0 +1,5 @@
+module OSG_Test
+typeinfo appOSG_Test.qmltypes
+prefer :/qt/qml/OSG_Test/
+Main 1.0 Main.qml
+

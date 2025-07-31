@@ -1,0 +1,10 @@
+--bare
+-I
+/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug
+-I
+/home/canhdx/Qt/6.9.1/gcc_64/qml
+--resource
+/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qmake_OSG_Test.qrc
+--resource
+/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/appOSG_Test_raw_qml_0.qrc
+/home/canhdx/OSG_Test/Main.qml

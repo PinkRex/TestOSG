@@ -1,0 +1,43 @@
+{
+    "classes": [
+        {
+            "className": "SimpleOsgEarthItem",
+            "lineNumber": 36,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "earthFilePath",
+                    "notify": "earthFilePathChanged",
+                    "read": "earthFilePath",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setEarthFilePath"
+                }
+            ],
+            "qualifiedClassName": "SimpleOsgEarthItem",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "earthFilePathChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickFramebufferObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "SimpleOsgEarthItemRenderer.h",
+    "outputRevision": 69
+}
