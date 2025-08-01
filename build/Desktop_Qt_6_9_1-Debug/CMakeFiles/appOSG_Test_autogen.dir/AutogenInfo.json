@@ -1072,6 +1072,18 @@
 			"MU",
 			"EWIEGA46WW/moc_SimpleOsgEarthItem.cpp",
 			null
+		],
+		[
+			"/home/canhdx/OSG_Test/osgearthitem2.h",
+			"MU",
+			"EWIEGA46WW/moc_osgearthitem2.cpp",
+			null
+		],
+		[
+			"/home/canhdx/OSG_Test/osgearthrenderer2.h",
+			"MU",
+			"EWIEGA46WW/moc_osgearthrenderer2.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1166,7 +1178,10 @@
 	"SOURCES" : 
 	[
 		[ "/home/canhdx/OSG_Test/SimpleOsgEarthItem.cpp", "MU", null ],
-		[ "/home/canhdx/OSG_Test/main.cpp", "MU", null ]
+		[ "/home/canhdx/OSG_Test/Template.cpp", "MU", null ],
+		[ "/home/canhdx/OSG_Test/main.cpp", "MU", null ],
+		[ "/home/canhdx/OSG_Test/osgearthitem2.cpp", "MU", null ],
+		[ "/home/canhdx/OSG_Test/osgearthrenderer2.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

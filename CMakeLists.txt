@@ -37,6 +37,9 @@ qt_add_qml_module(appOSG_Test
         SOURCES
         SOURCES SimpleOsgEarthItem.h SimpleOsgEarthItem.cpp
         RESOURCES Test.earth
+        SOURCES osgearthitem2.h osgearthitem2.cpp
+        SOURCES osgearthrenderer2.h osgearthrenderer2.cpp
+        SOURCES Template.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
