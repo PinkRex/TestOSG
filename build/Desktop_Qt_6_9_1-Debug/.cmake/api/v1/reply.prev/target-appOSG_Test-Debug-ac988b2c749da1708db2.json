@@ -1020,7 +1020,7 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "SimpleOsgEarthItemRenderer.cpp",
+			"path" : "SimpleOsgEarthItem.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1045,7 +1045,7 @@
 		},
 		{
 			"backtrace" : 77,
-			"path" : "SimpleOsgEarthItemRenderer.h",
+			"path" : "SimpleOsgEarthItem.h",
 			"sourceGroupIndex" : 2
 		},
 		{

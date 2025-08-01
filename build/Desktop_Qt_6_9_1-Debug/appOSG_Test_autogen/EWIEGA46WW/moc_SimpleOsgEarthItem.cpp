@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'SimpleOsgEarthItemRenderer.h'
+** Meta object code from reading C++ file 'SimpleOsgEarthItem.h'
 **
 ** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../SimpleOsgEarthItemRenderer.h"
+#include "../../../../SimpleOsgEarthItem.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'SimpleOsgEarthItemRenderer.h' doesn't include <QObject>."
+#error "The header file 'SimpleOsgEarthItem.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
 #error "This file was generated using the moc from 6.9.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -39,17 +39,17 @@ template <> constexpr inline auto SimpleOsgEarthItem::qt_create_metaobjectdata<q
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "SimpleOsgEarthItem",
-        "earthFilePathChanged",
+        "earthFileChanged",
         "",
-        "earthFilePath"
+        "earthFile"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'earthFilePathChanged'
+        // Signal 'earthFileChanged'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
-        // property 'earthFilePath'
+        // property 'earthFile'
         QtMocHelpers::PropertyData<QString>(3, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
     };
     QtMocHelpers::UintData qt_enums {
@@ -72,25 +72,25 @@ void SimpleOsgEarthItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     auto *_t = static_cast<SimpleOsgEarthItem *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->earthFilePathChanged(); break;
+        case 0: _t->earthFileChanged(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (SimpleOsgEarthItem::*)()>(_a, &SimpleOsgEarthItem::earthFilePathChanged, 0))
+        if (QtMocHelpers::indexOfMethod<void (SimpleOsgEarthItem::*)()>(_a, &SimpleOsgEarthItem::earthFileChanged, 0))
             return;
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast<QString*>(_v) = _t->earthFilePath(); break;
+        case 0: *reinterpret_cast<QString*>(_v) = _t->earthFile(); break;
         default: break;
         }
     }
     if (_c == QMetaObject::WriteProperty) {
         void *_v = _a[0];
         switch (_id) {
-        case 0: _t->setEarthFilePath(*reinterpret_cast<QString*>(_v)); break;
+        case 0: _t->setEarthFile(*reinterpret_cast<QString*>(_v)); break;
         default: break;
         }
     }
@@ -134,7 +134,7 @@ int SimpleOsgEarthItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void SimpleOsgEarthItem::earthFilePathChanged()
+void SimpleOsgEarthItem::earthFileChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }

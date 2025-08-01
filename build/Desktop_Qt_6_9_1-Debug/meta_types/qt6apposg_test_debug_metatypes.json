@@ -3,7 +3,7 @@
         "classes": [
             {
                 "className": "SimpleOsgEarthItem",
-                "lineNumber": 36,
+                "lineNumber": 5,
                 "object": true,
                 "properties": [
                     {
@@ -11,15 +11,15 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "name": "earthFilePath",
-                        "notify": "earthFilePathChanged",
-                        "read": "earthFilePath",
+                        "name": "earthFile",
+                        "notify": "earthFileChanged",
+                        "read": "earthFile",
                         "required": false,
                         "scriptable": true,
                         "stored": true,
                         "type": "QString",
                         "user": false,
-                        "write": "setEarthFilePath"
+                        "write": "setEarthFile"
                     }
                 ],
                 "qualifiedClassName": "SimpleOsgEarthItem",
@@ -27,7 +27,7 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "name": "earthFilePathChanged",
+                        "name": "earthFileChanged",
                         "returnType": "void"
                     }
                 ],
@@ -39,7 +39,7 @@
                 ]
             }
         ],
-        "inputFile": "SimpleOsgEarthItemRenderer.h",
+        "inputFile": "SimpleOsgEarthItem.h",
         "outputRevision": 69
     }
 ]

@@ -1,1 +1,1 @@
-/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EWIEGA46WW/moc_SimpleOsgEarthItemRenderer.cpp.json
+/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EWIEGA46WW/moc_SimpleOsgEarthItem.cpp.json

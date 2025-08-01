@@ -1068,9 +1068,9 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/canhdx/OSG_Test/SimpleOsgEarthItemRenderer.h",
+			"/home/canhdx/OSG_Test/SimpleOsgEarthItem.h",
 			"MU",
-			"EWIEGA46WW/moc_SimpleOsgEarthItemRenderer.cpp",
+			"EWIEGA46WW/moc_SimpleOsgEarthItem.cpp",
 			null
 		]
 	],
@@ -1165,7 +1165,7 @@
 	"SETTINGS_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/canhdx/OSG_Test/SimpleOsgEarthItemRenderer.cpp", "MU", null ],
+		[ "/home/canhdx/OSG_Test/SimpleOsgEarthItem.cpp", "MU", null ],
 		[ "/home/canhdx/OSG_Test/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

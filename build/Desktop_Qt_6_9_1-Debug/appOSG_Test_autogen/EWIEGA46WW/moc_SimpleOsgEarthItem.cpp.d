@@ -1,4 +1,4 @@
-/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/EWIEGA46WW/moc_SimpleOsgEarthItemRenderer.cpp: /home/canhdx/OSG_Test/SimpleOsgEarthItemRenderer.h \
+/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/EWIEGA46WW/moc_SimpleOsgEarthItem.cpp: /home/canhdx/OSG_Test/SimpleOsgEarthItem.h \
   /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QList \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QObject \
@@ -201,260 +201,6 @@
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtQuick/qtquick-config.h \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtQuick/qtquickexports.h \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtQuick/qtquickglobal.h \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Affinity \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Atomic \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Barrier \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Block \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Condition \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Config \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Exports \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Mutex \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/ReentrantMutex \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/ScopedLock \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/OpenThreads/Thread \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ApplicationUsage \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ArgumentParser \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Array \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/AttributeDispatchers \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Billboard \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/BoundingBox \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/BoundingSphere \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/BufferObject \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Callback \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Camera \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ClearNode \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ClipPlane \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ClusterCullingCallback \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CollectOccludersVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ColorMask \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Config \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ConvexPlanarOccluder \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ConvexPlanarPolygon \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CoordinateSystemNode \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CopyOp \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CullSettings \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CullStack \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/CullingSet \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/DisplaySettings \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Drawable \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Endian \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Export \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/FrameBufferObject \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/FrameStamp \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GL \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GLDefines \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GLExtensions \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GLObjects \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Geode \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Geometry \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GraphicsContext \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GraphicsCostEstimator \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/GraphicsThread \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Group \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Image \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/KdTree \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/LOD \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Light \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/LightSource \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Math \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Matrix \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/MatrixTransform \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Matrixd \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Matrixf \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/MixinVector \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Node \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/NodeCallback \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/NodeVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Notify \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Object \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Observer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ObserverNodePath \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/OccluderNode \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/OperationThread \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/PagedLOD \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Plane \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Polytope \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/PrimitiveSet \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Program \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Projection \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Quat \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Referenced \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/RenderInfo \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ScriptEngine \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Shader \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ShaderComposer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ShadowVolumeOccluder \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Shape \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/State \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/StateAttribute \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/StateSet \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Stats \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Switch \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Texture \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Texture2D \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Texture2DArray \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Timer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Transform \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Types \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Uniform \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/UserDataContainer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ValueMap \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ValueObject \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ValueStack \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2 \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2b \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2d \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2f \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2i \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2s \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2ub \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2ui \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec2us \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3 \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3b \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3d \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3f \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3i \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3s \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3ub \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3ui \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec3us \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4 \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4b \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4d \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4f \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4i \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4s \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4ub \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4ui \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Vec4us \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Version \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/VertexArrayState \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/View \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/Viewport \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/buffered_value \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/fast_back_stack \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/observer_ptr \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osg/ref_ptr \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/AuthenticationMap \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Callbacks \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/DataTypes \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/DatabasePager \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/DatabaseRevisions \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/DotOsgWrapper \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/DynamicLibrary \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Export \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/FileCache \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/FileNameUtils \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/ImagePager \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/ImageProcessor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Input \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/InputStream \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/ObjectCache \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/ObjectWrapper \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Options \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Output \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/OutputStream \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/ReaderWriter \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Registry \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/Serializer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/SharedStateManager \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/StreamOperator \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgDB/fstream \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/CameraManipulator \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/Device \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/Event \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/EventHandler \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/EventQueue \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/EventVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/Export \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/GUIActionAdapter \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/GUIEventAdapter \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgGA/GUIEventHandler \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/CullVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/Export \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/GLObjectsVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/IncrementalCompileOperation \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/IntersectionVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/LineSegmentIntersector \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/PolytopeIntersector \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/PositionalStateContainer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/RenderBin \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/RenderLeaf \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/RenderStage \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/SceneView \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/StateGraph \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgUtil/UpdateVisitor \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/Export \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/GraphicsWindow \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/Keystone \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/Scene \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/View \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/Viewer \
-  /home/canhdx/Setup/OSG/OpenSceneGraph/install/include/osgViewer/ViewerBase \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Bounds \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/BuildConfig \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Cache \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/CacheBin \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/CachePolicy \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Callbacks \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Color \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Common \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Config \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Containers \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/CullingUtils \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/DateTime \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/EarthManipulator \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Elevation \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/ElevationLayer \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/ElevationPool \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Ellipsoid \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Export \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Extension \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/GeoCommon \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/GeoData \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/GeoTransform \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Geoid \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Geometry \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Horizon \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/IOTypes \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/ImageUtils \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Layer \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/LayerShader \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Map \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/MapCallback \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/MapNode \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Math \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/MemCache \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Notify \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/PBRMaterial \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/PluginLoader \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Profile \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Registry \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Revisioning \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/SceneGraphCallback \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/ShaderGenerator \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/SpatialReference \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/StateSetCache \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Status \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/StringUtils \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Terrain \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/TerrainOptions \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/TerrainResources \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Threading \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/TileKey \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/TileLayer \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/URI \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Units \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/VerticalDatum \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/Viewpoint \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/VirtualProgram \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/VisibleLayer \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/optional \
-  /home/canhdx/Setup/OSG/osgearth/install/include/osgEarth/weejobs.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
-  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -472,24 +218,19 @@
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
@@ -497,41 +238,29 @@
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/bits/locale_facets.h \
-  /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
-  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
@@ -543,11 +272,9 @@
   /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/bits/stl_pair.h \
-  /usr/include/c++/11/bits/stl_queue.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/bits/stl_set.h \
-  /usr/include/c++/11/bits/stl_stack.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -556,9 +283,7 @@
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/unordered_set.h \
@@ -567,12 +292,10 @@
   /usr/include/c++/11/cassert \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
-  /usr/include/c++/11/cfloat \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/climits \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
-  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
@@ -580,10 +303,8 @@
   /usr/include/c++/11/cstring \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/cwchar \
-  /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
-  /usr/include/c++/11/deque \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
@@ -593,37 +314,24 @@
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/fstream \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
-  /usr/include/c++/11/locale \
   /usr/include/c++/11/map \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/mutex \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/optional \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/queue \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/set \
-  /usr/include/c++/11/shared_mutex \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/stack \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/string \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/system_error \
-  /usr/include/c++/11/thread \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
@@ -637,12 +345,10 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
-  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -653,7 +359,6 @@
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
-  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -663,19 +368,10 @@
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -726,31 +422,23 @@
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/float.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h

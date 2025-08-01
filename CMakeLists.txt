@@ -22,7 +22,7 @@ qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appOSG_Test
     main.cpp
-    SimpleOsgEarthItemRenderer.cpp
+    SimpleOsgEarthItem.cpp
     # OsgEarthView.cpp
     # OsgEarthRenderer.cpp
 )
@@ -35,7 +35,7 @@ qt_add_qml_module(appOSG_Test
         SOURCES
         SOURCES
         SOURCES
-        SOURCES SimpleOsgEarthItemRenderer.h SimpleOsgEarthItemRenderer.cpp
+        SOURCES SimpleOsgEarthItem.h SimpleOsgEarthItem.cpp
         RESOURCES Test.earth
 )
 
