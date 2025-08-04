@@ -2,35 +2,10 @@
     {
         "classes": [
             {
-                "className": "SimpleOsgEarthItem",
-                "lineNumber": 5,
+                "className": "OsgEarthItem2",
+                "lineNumber": 4,
                 "object": true,
-                "properties": [
-                    {
-                        "constant": false,
-                        "designable": true,
-                        "final": false,
-                        "index": 0,
-                        "name": "earthFile",
-                        "notify": "earthFileChanged",
-                        "read": "earthFile",
-                        "required": false,
-                        "scriptable": true,
-                        "stored": true,
-                        "type": "QString",
-                        "user": false,
-                        "write": "setEarthFile"
-                    }
-                ],
-                "qualifiedClassName": "SimpleOsgEarthItem",
-                "signals": [
-                    {
-                        "access": "public",
-                        "index": 0,
-                        "name": "earthFileChanged",
-                        "returnType": "void"
-                    }
-                ],
+                "qualifiedClassName": "OsgEarthItem2",
                 "superClasses": [
                     {
                         "access": "public",
@@ -39,7 +14,7 @@
                 ]
             }
         ],
-        "inputFile": "SimpleOsgEarthItem.h",
+        "inputFile": "osgearthitem2.h",
         "outputRevision": 69
     }
 ]

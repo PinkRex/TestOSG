@@ -8,7 +8,6 @@ set(OSG_ROOT /home/canhdx/Setup/OSG/OpenSceneGraph/install)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
 find_package(GDAL REQUIRED)
-# target_link_libraries(appOSG_Test PRIVATE GDAL::GDAL)
 
 include_directories(${OSGEARTH_ROOT}/include)
 link_directories(${OSGEARTH_ROOT}/lib64)
@@ -22,9 +21,6 @@ qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appOSG_Test
     main.cpp
-    SimpleOsgEarthItem.cpp
-    # OsgEarthView.cpp
-    # OsgEarthRenderer.cpp
 )
 
 qt_add_qml_module(appOSG_Test
@@ -35,18 +31,13 @@ qt_add_qml_module(appOSG_Test
         SOURCES
         SOURCES
         SOURCES
-        SOURCES SimpleOsgEarthItem.h SimpleOsgEarthItem.cpp
         RESOURCES Test.earth
         SOURCES osgearthitem2.h osgearthitem2.cpp
         SOURCES osgearthrenderer2.h osgearthrenderer2.cpp
         SOURCES Template.cpp
 )
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
 set_target_properties(appOSG_Test PROPERTIES
-#    MACOSX_BUNDLE_GUI_IDENTIFIER com.example.appOSG_Test
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE

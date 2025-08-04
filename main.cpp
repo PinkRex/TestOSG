@@ -1,14 +1,17 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <SimpleOsgEarthItem.h>
 #include <osgEarth/Registry>
 #include <QDebug>
 
+#include <osgearthitem2.h>
+
 int main(int argc, char *argv[])
 {
+    QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
+
     QGuiApplication app(argc, argv);
     osgEarth::initialize();
-    qmlRegisterType<SimpleOsgEarthItem>("OsgEarth", 1, 0, "SimpleOsgEarthItem");
+    qmlRegisterType<OsgEarthItem2>("OsgEarth2", 1, 0, "OsgEarthItem2");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl::fromLocalFile("/home/canhdx/OSG_Test/Main.qml"));

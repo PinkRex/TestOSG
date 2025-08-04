@@ -1,29 +1,27 @@
-#ifndef OSGEARTHRENDERER2_H
-#define OSGEARTHRENDERER2_H
+#pragma once
 
 #include <osgViewer/Viewer>
-#include <osgViewer/ViewerEventHandlers>
-
+#include <osgEarth/Map>
+#include <osgEarth/MapNode>
 #include <QQuickFramebufferObject>
-#include <osgearthitem2.h>
 
 class OsgEarthRenderer2 : public QQuickFramebufferObject::Renderer {
-
 public:
-    OsgEarthRenderer2(OsgEarthItem2* item);
-    QOpenGLFramebufferObject* createFramebufferObject(const QSize& size) override;
+    OsgEarthRenderer2();
+    ~OsgEarthRenderer2();
+
     void render() override;
+    QOpenGLFramebufferObject *createFramebufferObject(const QSize &size) override;
+    void synchronize(QQuickFramebufferObject *item) override;
 
 private:
-    void loadEarthFile(const QString& path);
-    OsgEarthItem2* m_item;
-    osgViewer::Viewer m_viewer;
-    osg::ref_ptr<osg::Node> m_root;
-    osg::ref_ptr<osgGA::CameraManipulator> m_manip;
-    bool m_initialized = false;
-    bool m_firstTime = true;
-    int frameCount = 0;
-    QSizeF m_lastSize;
+    osg::ref_ptr<osgViewer::Viewer> m_viewer;
+    osg::ref_ptr<osgEarth::Map> m_map;
+    osg::ref_ptr<osgEarth::MapNode> m_mapNode;
+    void initOsgEarthScene();
+    void addImagery();
+    void addElevation();
+    void addBuildings();
+    void addStreets();
+    void addParks();
 };
-
-#endif // OSGEARTHRENDERER2_H

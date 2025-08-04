@@ -1,7 +1,6 @@
 appOSG_Test_autogen/timestamp: \
 	/home/canhdx/OSG_Test/CMakeLists.txt \
-	/home/canhdx/OSG_Test/SimpleOsgEarthItem.cpp \
-	/home/canhdx/OSG_Test/SimpleOsgEarthItem.h \
+	/home/canhdx/OSG_Test/Template.cpp \
 	/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake \
 	/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \
@@ -9,6 +8,10 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h \
 	/home/canhdx/OSG_Test/main.cpp \
+	/home/canhdx/OSG_Test/osgearthitem2.cpp \
+	/home/canhdx/OSG_Test/osgearthitem2.h \
+	/home/canhdx/OSG_Test/osgearthrenderer2.cpp \
+	/home/canhdx/OSG_Test/osgearthrenderer2.h \
 	/home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QList \
 	/home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QObject \
 	/home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QRect \

@@ -5,5 +5,5 @@ set(qml_import_scanner_import_2 "NAME;QML;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/
 set(qml_import_scanner_import_3 "CLASSNAME;QtQmlModelsPlugin;LINKTARGET;Qt6::modelsplugin;NAME;QtQml.Models;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QtQml/Models;PLUGIN;modelsplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/Models/;RELATIVEPATH;QtQml/Models;TYPE;module;")
 set(qml_import_scanner_import_4 "CLASSNAME;QtQmlWorkerScriptPlugin;LINKTARGET;Qt6::workerscriptplugin;NAME;QtQml.WorkerScript;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QtQml/WorkerScript;PLUGIN;workerscriptplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/WorkerScript/;RELATIVEPATH;QtQml/WorkerScript;TYPE;module;")
 set(qml_import_scanner_import_5 "CLASSNAME;QtQuick_WindowPlugin;LINKTARGET;Qt6::quickwindow;NAME;QtQuick.Window;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QtQuick/Window;PLUGIN;quickwindowplugin;PREFER;:/qt-project.org/imports/QtQuick/Window/;RELATIVEPATH;QtQuick/Window;TYPE;module;")
-set(qml_import_scanner_import_6 "NAME;OsgEarth;TYPE;module;")
+set(qml_import_scanner_import_6 "NAME;OsgEarth2;TYPE;module;")
 
