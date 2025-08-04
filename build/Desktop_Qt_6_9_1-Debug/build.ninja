@@ -352,7 +352,7 @@ build .rcc/qmlcache/appOSG_Test_Main_qml.cpp .rcc/qmlcache/appOSG_Test_Main_qml.
 #############################################
 # Custom command for .qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp: CUSTOM_COMMAND /home/canhdx/OSG_Test/Main.qml /home/canhdx/OSG_Test/Test.earth .qt/rcc/appOSG_Test_raw_qml_0.qrc /home/canhdx/Qt/6.9.1/gcc_64/libexec/rcc || appOSG_Test_autogen appOSG_Test_autogen_timestamp_deps appOSG_Test_copy_qml appOSG_Test_copy_res appOSG_Test_qmlimportscan
+build .qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp: CUSTOM_COMMAND /home/canhdx/OSG_Test/Main.qml /home/canhdx/OSG_Test/Note.txt .qt/rcc/appOSG_Test_raw_qml_0.qrc /home/canhdx/Qt/6.9.1/gcc_64/libexec/rcc || appOSG_Test_autogen appOSG_Test_autogen_timestamp_deps appOSG_Test_copy_qml appOSG_Test_copy_res appOSG_Test_qmlimportscan
   COMMAND = cd /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug && /home/canhdx/Qt/6.9.1/gcc_64/libexec/rcc --output /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp --name appOSG_Test_raw_qml_0 /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/appOSG_Test_raw_qml_0.qrc
   DESC = Running rcc for resource appOSG_Test_raw_qml_0
   restat = 1
@@ -429,7 +429,7 @@ build CMakeFiles/appOSG_Test_copy_res | ${cmake_ninja_workdir}CMakeFiles/appOSG_
 #############################################
 # Custom command for .qt/appOSG_Test_res.txt
 
-build .qt/appOSG_Test_res.txt | ${cmake_ninja_workdir}.qt/appOSG_Test_res.txt: CUSTOM_COMMAND /home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake /home/canhdx/OSG_Test/Test.earth
+build .qt/appOSG_Test_res.txt | ${cmake_ninja_workdir}.qt/appOSG_Test_res.txt: CUSTOM_COMMAND /home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake /home/canhdx/OSG_Test/Note.txt
   COMMAND = cd /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug && /home/canhdx/Qt/Tools/CMake/bin/cmake -DFILES_INFO_PATH=/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/appOSG_Test_res.cmake -P /home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
   DESC = Copying appOSG_Test qml resources into build dir
   restat = 1

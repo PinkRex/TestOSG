@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/OSG_Test/">
     <file alias="Main.qml">/home/canhdx/OSG_Test/Main.qml</file>
-    <file alias="Test.earth">/home/canhdx/OSG_Test/Test.earth</file>
+    <file alias="Note.txt">/home/canhdx/OSG_Test/Note.txt</file>
   </qresource>
 </RCC>
 
