@@ -19,10 +19,33 @@
 
 OsgEarthRenderer2::OsgEarthRenderer2() {
     osgEarth::initialize();
+    osgEarth::setNotifyLevel(osg::DEBUG_INFO);
 
     m_viewer = new osgViewer::Viewer;
     m_viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);
+    m_viewer->getEventHandlers().clear();
     m_viewer->setCameraManipulator(new osgEarth::Util::EarthManipulator);
+    m_viewer->addEventHandler(new osgViewer::StatsHandler); // Debug hiệu suất
+
+    osg::ref_ptr<osg::GraphicsContext::Traits> traits = new osg::GraphicsContext::Traits;
+    traits->x = 0;
+    traits->y = 0;
+    traits->width = 1;
+    traits->height = 1;
+    traits->windowDecoration = false;
+    traits->doubleBuffer = true;
+    traits->sharedContext = 0;
+
+    osg::ref_ptr<osgViewer::GraphicsWindowEmbedded> gc = new osgViewer::GraphicsWindowEmbedded(traits.get());
+    if (!gc.valid()) {
+        qWarning() << "Failed to create embedded GraphicsWindow!";
+        return;
+    }
+
+    m_viewer->getCamera()->setGraphicsContext(gc.get());
+    m_viewer->getCamera()->setViewport(new osg::Viewport(0, 0, traits->width, traits->height));
+    m_viewer->getCamera()->setDrawBuffer(GL_BACK);
+    m_viewer->getCamera()->setReadBuffer(GL_BACK);
 
     initOsgEarthScene();
 }
@@ -216,5 +239,15 @@ void OsgEarthRenderer2::render() {
 }
 
 void OsgEarthRenderer2::synchronize(QQuickFramebufferObject *item) {
-    Q_UNUSED(item)
+    QSize size = item->size().toSize();
+    if (size.isEmpty()) {
+        qWarning() << "Empty size in synchronize";
+        return;
+    }
+    osg::Camera* camera = m_viewer->getCamera();
+    if (camera && camera->getViewport()) {
+        camera->getViewport()->setViewport(0, 0, size.width(), size.height());
+        camera->setProjectionMatrixAsPerspective(30.0, size.width() / (double)size.height(), 1.0, 10000.0);
+    }
+    qDebug() << "Sync size:" << size;
 }
