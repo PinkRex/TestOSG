@@ -1,8 +1,8 @@
-# Install script for directory: /home/canhdx/OSG_Test
+# Install script for directory: /home/canhdx/TestOSG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/tmp")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-14")
+  set(CMAKE_OBJDUMP "/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -49,15 +49,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test"
          RPATH "\$ORIGIN:\$ORIGIN/../lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test"
-         OLD_RPATH "/home/canhdx/Setup/OSG/osgearth/install/lib64:/home/canhdx/Setup/OSG/OpenSceneGraph/install/lib:/home/canhdx/Setup/GDAL/install/lib:/home/canhdx/Qt/6.9.1/gcc_64/lib:"
+         OLD_RPATH "/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/lib64:/home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/lib:/home/canhdx/Setup/VISG/GDAL/gdal-3.9.2/install/lib:/home/canhdx/Setup/VISG/GEOS/geos-3.12.3/install/lib:/home/canhdx/Qt/6.9.1/gcc_64/lib:"
          NEW_RPATH "\$ORIGIN:\$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/llvm-strip-14" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test")
+      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appOSG_Test")
     endif()
   endif()
 endif()
@@ -77,6 +77,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

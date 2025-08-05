@@ -1,5 +1,5 @@
-/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/EWIEGA46WW/moc_osgearthitem2.cpp: /home/canhdx/OSG_Test/osgearthitem2.h \
-  /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h \
+/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/EWIEGA46WW/moc_osgearthitem2.cpp: /home/canhdx/TestOSG/osgearthitem2.h \
+  /home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QList \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QObject \
   /home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QRect \
@@ -245,6 +245,7 @@
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -255,6 +256,7 @@
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/stl_algo.h \
@@ -282,6 +284,7 @@
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
@@ -325,6 +328,10 @@
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/optional \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/set \
   /usr/include/c++/11/stdexcept \
@@ -332,6 +339,18 @@
   /usr/include/c++/11/string \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/system_error \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
@@ -438,7 +457,6 @@
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h

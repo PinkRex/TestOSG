@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_appOSG_Test_FILE /home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test)
+set(__QT_DEPLOY_TARGET_appOSG_Test_FILE /home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test)
 set(__QT_DEPLOY_TARGET_appOSG_Test_TYPE EXECUTABLE)

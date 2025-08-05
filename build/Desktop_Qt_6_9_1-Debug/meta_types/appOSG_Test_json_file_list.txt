@@ -1,1 +1,1 @@
-/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EWIEGA46WW/moc_osgearthitem2.cpp.json
+/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EWIEGA46WW/moc_osgearthitem2.cpp.json

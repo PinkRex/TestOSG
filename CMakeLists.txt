@@ -3,11 +3,13 @@ cmake_minimum_required(VERSION 3.16)
 project(OSG_Test VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(OSGEARTH_ROOT /home/canhdx/Setup/OSG/osgearth/install)
-set(OSG_ROOT /home/canhdx/Setup/OSG/OpenSceneGraph/install)
+set(OSGEARTH_ROOT /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install)
+set(OSG_ROOT /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install)
+set(GDAL_ROOT /home/canhdx/Setup/VISG/GDAL/gdal-3.9.2/install)
+set(GEOS_ROOT /home/canhdx/Setup/VISG/GEOS/geos-3.12.3/install)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
-find_package(GDAL REQUIRED)
+# find_package(GDAL REQUIRED)
 
 include_directories(${OSGEARTH_ROOT}/include)
 link_directories(${OSGEARTH_ROOT}/lib64)
@@ -15,7 +17,11 @@ link_directories(${OSGEARTH_ROOT}/lib64)
 include_directories(${OSG_ROOT}/include)
 link_directories(${OSG_ROOT}/lib)
 
-link_directories(/home/canhdx/Setup/GDAL/install/lib/)
+include_directories(${GDAL_ROOT}/include)
+link_directories(${GDAL_ROOT}/lib)
+
+include_directories(${GEOS_ROOT}/include)
+link_directories(${GEOS_ROOT}/lib)
 
 qt_standard_project_setup(REQUIRES 6.8)
 

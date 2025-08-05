@@ -1,18 +1,18 @@
 {
-	"BUILD_DIR" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen",
-	"CMAKE_BINARY_DIR" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/canhdx/OSG_Test",
+	"BUILD_DIR" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen",
+	"CMAKE_BINARY_DIR" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/canhdx/TestOSG",
 	"CMAKE_EXECUTABLE" : "/home/canhdx/Qt/Tools/CMake/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/canhdx/OSG_Test/CMakeLists.txt",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+		"/home/canhdx/TestOSG/CMakeLists.txt",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -20,12 +20,9 @@
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/UnixPaths.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/Clang.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/GNU.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux-Clang-CXX.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
@@ -1050,39 +1047,36 @@
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/FindGDAL.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake",
-		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake"
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/canhdx/OSG_Test",
+	"CMAKE_SOURCE_DIR" : "/home/canhdx/TestOSG",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/deps",
+	"DEP_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appOSG_Test_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/canhdx/OSG_Test/osgearthitem2.h",
+			"/home/canhdx/TestOSG/osgearthitem2.h",
 			"MU",
 			"EWIEGA46WW/moc_osgearthitem2.cpp",
 			null
 		],
 		[
-			"/home/canhdx/OSG_Test/osgearthrenderer2.h",
+			"/home/canhdx/TestOSG/osgearthrenderer2.h",
 			"MU",
 			"EWIEGA46WW/moc_osgearthrenderer2.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -1105,9 +1099,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/canhdx/Setup/OSG/osgearth/install/include",
-		"/home/canhdx/Setup/OSG/OpenSceneGraph/install/include",
-		"/home/canhdx/OSG_Test",
+		"/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include",
+		"/home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include",
+		"/home/canhdx/Setup/VISG/GDAL/gdal-3.9.2/install/include",
+		"/home/canhdx/Setup/VISG/GEOS/geos-3.12.3/install/include",
+		"/home/canhdx/TestOSG",
 		"/home/canhdx/Qt/6.9.1/gcc_64/include/QtQml/6.9.1",
 		"/home/canhdx/Qt/6.9.1/gcc_64/include/QtQml/6.9.1/QtQml",
 		"/home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/6.9.1",
@@ -1128,7 +1124,7 @@
 		"/usr/include/c++/11",
 		"/usr/include/x86_64-linux-gnu/c++/11",
 		"/usr/include/c++/11/backward",
-		"/usr/lib/llvm-14/lib/clang/14.0.0/include",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
 		"/usr/local/include",
 		"/usr/include/x86_64-linux-gnu"
 	],
@@ -1145,46 +1141,46 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/clang++-14",
+		"/bin/g++",
 		"-dM",
 		"-E",
 		"-c",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/canhdx/Qt/6.9.1/gcc_64/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,
-	"SETTINGS_FILE" : "/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/canhdx/OSG_Test/Template.cpp", "MU", null ],
-		[ "/home/canhdx/OSG_Test/main.cpp", "MU", null ],
-		[ "/home/canhdx/OSG_Test/osgearthitem2.cpp", "MU", null ],
-		[ "/home/canhdx/OSG_Test/osgearthrenderer2.cpp", "MU", null ]
+		[ "/home/canhdx/TestOSG/Template.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/main.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/osgearthitem2.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/osgearthrenderer2.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
-		"/home/canhdx/OSG_Test/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,

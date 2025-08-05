@@ -11,11 +11,11 @@
 
 #define IMAGERY_URL      "http://readymap.org/readymap/tiles/1.0.0/22/"
 #define ELEVATION_URL    "http://readymap.org/readymap/tiles/1.0.0/116/"
-#define BUILDINGS_URL    "/home/canhdx/OSG_Test/data/boston_buildings_utm19.shp"
-#define RESOURCE_LIB_URL "/home/canhdx/OSG_Test/data/catalog.xml"
-#define STREETS_URL      "/home/canhdx/OSG_Test/data/boston-scl-utm19n-meters.shp"
-#define PARKS_URL        "/home/canhdx/OSG_Test/data/boston-parks.shp"
-#define TREE_MODEL_URL   "/home/canhdx/OSG_Test/data/tree.osg"
+#define BUILDINGS_URL    "/home/canhdx/TestOSG/data/boston_buildings_utm19.shp"
+#define RESOURCE_LIB_URL "/home/canhdx/TestOSG/data/catalog.xml"
+#define STREETS_URL      "/home/canhdx/TestOSG/data/boston-scl-utm19n-meters.shp"
+#define PARKS_URL        "/home/canhdx/TestOSG/data/boston-parks.shp"
+#define TREE_MODEL_URL   "/home/canhdx/TestOSG/data/tree.osg"
 
 OsgEarthRenderer2::OsgEarthRenderer2() {
     osgEarth::initialize();

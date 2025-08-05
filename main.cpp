@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
     qmlRegisterType<OsgEarthItem2>("OsgEarth2", 1, 0, "OsgEarthItem2");
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl::fromLocalFile("/home/canhdx/OSG_Test/Main.qml"));
+    engine.load(QUrl::fromLocalFile("/home/canhdx/TestOSG/Main.qml"));
     return app.exec();
 }
