@@ -173,7 +173,7 @@ wget https://download.osgeo.org/geos/geos-3.12.3.tar.bz2
 tar xjf geos-3.12.3.tar.bz2
 cd geos-3.12.3
 mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../install
 make -j$(nproc)
 ctest
 sudo make install
