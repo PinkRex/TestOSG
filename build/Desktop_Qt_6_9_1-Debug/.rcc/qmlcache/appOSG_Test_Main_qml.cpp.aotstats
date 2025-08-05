@@ -9,7 +9,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"fill\".",
                         "functionName": "fill",
-                        "line": 19
+                        "line": 13
                     }
                 ],
                 "filePath": "/home/canhdx/TestOSG/Main.qml"

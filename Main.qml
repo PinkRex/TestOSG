@@ -8,14 +8,9 @@ Window {
     height: 768
     title: qsTr("osgEarth in QML")
 
-    // SimpleOsgEarthItem {
-    //     id: earthItem
-    //     anchors.fill: parent
-    //     earthFile: "/home/canhdx/OSG_Test/Test.earth"
-    // }
-
     OsgEarthItem2 {
         id: earthItem
         anchors.fill: parent
+        focus: true
     }
 }

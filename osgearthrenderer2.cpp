@@ -19,13 +19,13 @@
 
 OsgEarthRenderer2::OsgEarthRenderer2() {
     osgEarth::initialize();
-    osgEarth::setNotifyLevel(osg::DEBUG_INFO);
+    // osgEarth::setNotifyLevel(osg::DEBUG_INFO);
 
     m_viewer = new osgViewer::Viewer;
     m_viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);
     m_viewer->getEventHandlers().clear();
     m_viewer->setCameraManipulator(new osgEarth::Util::EarthManipulator);
-    m_viewer->addEventHandler(new osgViewer::StatsHandler); // Debug hiệu suất
+    m_viewer->addEventHandler(new osgViewer::StatsHandler);
 
     osg::ref_ptr<osg::GraphicsContext::Traits> traits = new osg::GraphicsContext::Traits;
     traits->x = 0;
@@ -66,7 +66,15 @@ void OsgEarthRenderer2::initOsgEarthScene() {
 
     auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
     if (manip) {
-        manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 24.261, -21.6, 3450.0), 5.0);
+        // manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 24.261, -21.6, 3450.0), 5.0);
+        manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 0, -45.0, 5000.0), 5.0);
+
+        auto* settings = manip->getSettings();  // Clone để giữ config gốc
+
+        settings->setMouseSensitivity(0.01);         // Giảm độ nhạy
+        settings->setThrowingEnabled(false);        // Tắt "quán tính"
+
+        manip->applySettings(settings);
     }
 
     m_viewer->setSceneData(root);
@@ -250,4 +258,44 @@ void OsgEarthRenderer2::synchronize(QQuickFramebufferObject *item) {
         camera->setProjectionMatrixAsPerspective(30.0, size.width() / (double)size.height(), 1.0, 10000.0);
     }
     qDebug() << "Sync size:" << size;
+}
+
+void OsgEarthRenderer2::handleMouseEvent(QMouseEvent* event) {
+    qDebug() << "Inside Mouse Handler";
+    if (!m_viewer) return;
+    osgGA::GUIEventAdapter::EventType eaType;
+
+    switch (event->type()) {
+    case QEvent::MouseButtonPress: eaType = osgGA::GUIEventAdapter::PUSH; break;
+    case QEvent::MouseMove:        eaType = osgGA::GUIEventAdapter::DRAG; break;
+    case QEvent::MouseButtonRelease:eaType = osgGA::GUIEventAdapter::RELEASE; break;
+    default: return;
+    }
+
+    int button = 0;
+    switch (event->button()) {
+    case Qt::LeftButton: button = 1; break;
+    case Qt::MiddleButton: button = 2; break;
+    case Qt::RightButton: button = 3; break;
+    }
+
+    auto queue = m_viewer->getEventQueue();
+    if (queue) {
+        queue->mouseMotion(event->position().x(), event->position().y());
+        if (eaType == osgGA::GUIEventAdapter::PUSH) {
+            queue->mouseButtonPress(event->position().x(), event->position().y(), button);
+        } else if (eaType == osgGA::GUIEventAdapter::RELEASE) {
+            queue->mouseButtonRelease(event->position().x(), event->position().y(), button);
+        }
+    }
+}
+
+void OsgEarthRenderer2::handleWheelEvent(QWheelEvent* event) {
+    qDebug() << "Inside Wheel Handler";
+
+    auto queue = m_viewer->getEventQueue();
+    if (queue) {
+        float delta = event->angleDelta().y() / 120.0f;
+        queue->mouseScroll((delta > 0) ? osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN);
+    }
 }

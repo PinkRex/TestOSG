@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
     qputenv("QSG_RENDER_LOOP", "basic");
 
-    osg::setNotifyLevel(osg::DEBUG_FP);
+    // osg::setNotifyLevel(osg::DEBUG_FP);
 
     QSurfaceFormat format;
     format.setRenderableType(QSurfaceFormat::OpenGL);

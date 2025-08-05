@@ -14,6 +14,10 @@ public:
     QOpenGLFramebufferObject *createFramebufferObject(const QSize &size) override;
     void synchronize(QQuickFramebufferObject *item) override;
 
+    void handleMouseEvent(QMouseEvent* event);
+    void handleWheelEvent(QWheelEvent* event);
+    // void handleKeyEvent(QKeyEvent* event);
+
 private:
     osg::ref_ptr<osgViewer::Viewer> m_viewer;
     osg::ref_ptr<osgEarth::Map> m_map;
