@@ -210,11 +210,13 @@ geos-config --version
 ### 2.4. Install GDAL 3.9.2
 
 ```bash
+sudo apt install libproj-dev
 wget https://download.osgeo.org/gdal/3.9.2/gdal-3.9.2.tar.gz
 tar zxvf gdal-3.9.2.tar.gz
 cd gdal-3.9.2
-mkdir build && cd build
-cmake ../gdal -DCMAKE_INSTALL_PREFIX=../install
+mkdir build install
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=../install
 make -j$(nproc)
 sudo make install
 ```
@@ -223,7 +225,6 @@ sudo make install
 
 **Update** `~/.bashrc`:
 Replace `GDAL_DIR` with the actual path to your GDAL install directory 
-
 
 ```bash
 # GDAL
