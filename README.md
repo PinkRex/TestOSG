@@ -125,6 +125,7 @@ Setup/
 **Fix**: Build FFmpeg manually as below.
 
 ```bash
+sudo apt install -y nasm yasm
 git clone https://github.com/FFmpeg/FFmpeg.git
 cd FFmpeg
 git checkout release/4.1
