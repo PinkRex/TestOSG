@@ -977,7 +977,8 @@
 				14,
 				15,
 				16,
-				18,
+				17,
+				26,
 				27,
 				28,
 				29,
@@ -985,8 +986,7 @@
 				31,
 				32,
 				33,
-				34,
-				35
+				34
 			]
 		},
 		{
@@ -1009,24 +1009,17 @@
 			]
 		},
 		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				17
-			]
-		},
-		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
+				18,
 				19,
 				20,
 				21,
 				22,
 				23,
 				24,
-				25,
-				26
+				25
 			]
 		}
 	],
@@ -1138,11 +1131,6 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 90,
-			"path" : "Note.txt",
-			"sourceGroupIndex" : 3
-		},
-		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/timestamp",
@@ -1152,49 +1140,49 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/meta_types/qt6apposg_test_debug_metatypes.json.gen.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/timestamp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/meta_types/appOSG_Test_json_file_list.txt.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 53,

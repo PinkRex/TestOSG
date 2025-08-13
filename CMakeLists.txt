@@ -37,7 +37,7 @@ qt_add_qml_module(appOSG_Test
         SOURCES
         SOURCES
         SOURCES
-        RESOURCES Note.txt
+        RESOURCES
         SOURCES osgearthitem2.h osgearthitem2.cpp
         SOURCES osgearthrenderer2.h osgearthrenderer2.cpp
         SOURCES Template.cpp
