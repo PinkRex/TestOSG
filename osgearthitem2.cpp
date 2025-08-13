@@ -2,46 +2,50 @@
 #include "osgearthrenderer2.h"
 #include <QDebug>
 
-OsgEarthItem2::OsgEarthItem2(QQuickItem* parent)
-    : QQuickFramebufferObject(parent)
+OsgEarthItem2::OsgEarthItem2(QQuickItem* parent) : QQuickFramebufferObject(parent)
 {
     setAcceptedMouseButtons(Qt::AllButtons);
     setAcceptHoverEvents(true);
     setFlag(ItemHasContents, true);
     setFocus(true);
     setFocusPolicy(Qt::StrongFocus);
-
-    qDebug() << "[OsgEarthItem2] Constructor called, mouse accepted buttons ="
-             << acceptedMouseButtons();
+    setMirrorVertically(true);
 }
 
 QQuickFramebufferObject::Renderer* OsgEarthItem2::createRenderer() const {
-    // return new OsgEarthRenderer2();
     auto r = new OsgEarthRenderer2();
     const_cast<OsgEarthItem2*>(this)->m_renderer = r;
     return r;
 }
 
 void OsgEarthItem2::mousePressEvent(QMouseEvent* event) {
-    qDebug() << "Mouse Pressed";
     if (m_renderer) m_renderer->handleMouseEvent(event);
     QQuickFramebufferObject::mousePressEvent(event);
 }
 
 void OsgEarthItem2::mouseMoveEvent(QMouseEvent* event) {
-    qDebug() << "Mouse Moved";
     if (m_renderer) m_renderer->handleMouseEvent(event);
     QQuickFramebufferObject::mouseMoveEvent(event);
 }
 
 void OsgEarthItem2::mouseReleaseEvent(QMouseEvent* event) {
-    qDebug() << "Mouse Released";
     if (m_renderer) m_renderer->handleMouseEvent(event);
     QQuickFramebufferObject::mouseReleaseEvent(event);
 }
 
 void OsgEarthItem2::wheelEvent(QWheelEvent* event) {
-    qDebug() << "Wheel Used";
     if (m_renderer) m_renderer->handleWheelEvent(event);
     QQuickFramebufferObject::wheelEvent(event);
+}
+
+void OsgEarthItem2::focusBoston() {
+    if (m_renderer) m_renderer->focusBoston();
+}
+
+void OsgEarthItem2::setMode2D(bool enable) {
+    if (m_renderer) m_renderer->setMode2D(enable);
+}
+
+void OsgEarthItem2::toggleBuildings() {
+    if (m_renderer) m_renderer->toggleBuildings();
 }

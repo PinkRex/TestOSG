@@ -3,6 +3,32 @@
         {
             "className": "OsgEarthItem2",
             "lineNumber": 5,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "focusBoston",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "enable",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "setMode2D",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "toggleBuildings",
+                    "returnType": "void"
+                }
+            ],
             "object": true,
             "qualifiedClassName": "OsgEarthItem2",
             "superClasses": [

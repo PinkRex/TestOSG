@@ -28,10 +28,10 @@ OsgEarthRenderer2::OsgEarthRenderer2() {
     m_viewer->addEventHandler(new osgViewer::StatsHandler);
 
     osg::ref_ptr<osg::GraphicsContext::Traits> traits = new osg::GraphicsContext::Traits;
-    traits->x = 0;
-    traits->y = 0;
-    traits->width = 1;
-    traits->height = 1;
+    // traits->x = 0;
+    // traits->y = 0;
+    // traits->width = 1;
+    // traits->height = 1;
     traits->windowDecoration = false;
     traits->doubleBuffer = true;
     traits->sharedContext = 0;
@@ -66,13 +66,11 @@ void OsgEarthRenderer2::initOsgEarthScene() {
 
     auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
     if (manip) {
-        // manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 24.261, -21.6, 3450.0), 5.0);
-        manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 0, -45.0, 5000.0), 5.0);
-
-        auto* settings = manip->getSettings();  // Clone để giữ config gốc
-
-        settings->setMouseSensitivity(0.01);         // Giảm độ nhạy
-        settings->setThrowingEnabled(false);        // Tắt "quán tính"
+        manip->setViewpoint(osgEarth::Viewpoint("Home", -71.0763, 42.34425, 0, 24.261, -21.6, 3450.0), 5.0);
+        auto* settings = manip->getSettings();
+        settings->setMouseSensitivity(0.001);
+        settings->setThrowingEnabled(false);
+        settings->setZoomToMouse(true);
 
         manip->applySettings(settings);
     }
@@ -95,12 +93,10 @@ void OsgEarthRenderer2::addElevation() {
 }
 
 void OsgEarthRenderer2::addBuildings() {
+    if (m_buildingsLayer) return; // tránh add nhiều lần
     osgEarth::OGRFeatureSource* data = new osgEarth::OGRFeatureSource();
     data->setName("buildings-data");
     data->setURL(BUILDINGS_URL);
-
-    qDebug() << data->getName();
-    qDebug() << QString::fromStdString(data->getURL().full());
 
     auto status = data->open();
     if (!status.isOK()) {
@@ -150,14 +146,29 @@ void OsgEarthRenderer2::addBuildings() {
     osgEarth::FeatureDisplayLayout layout;
     layout.tileSize() = 500;
 
-    osgEarth::FeatureModelLayer* layer = new osgEarth::FeatureModelLayer();
-    layer->setName("Buildings");
-    layer->setFeatureSource(data);
-    layer->setStyleSheet(styleSheet);
-    layer->setLayout(layout);
-    layer->setMaxVisibleRange(20000.0);
+    // osgEarth::FeatureModelLayer* layer = new osgEarth::FeatureModelLayer();
+    // layer->setName("Buildings");
+    // layer->setFeatureSource(data);
+    // layer->setStyleSheet(styleSheet);
+    // layer->setLayout(layout);
+    // layer->setMaxVisibleRange(20000.0);
 
-    m_map->addLayer(layer);
+    // m_map->addLayer(layer);
+
+    m_buildingsLayer = new osgEarth::FeatureModelLayer();
+    m_buildingsLayer->setName("Buildings");
+    m_buildingsLayer->setFeatureSource(data);
+    m_buildingsLayer->setStyleSheet(styleSheet);
+    m_buildingsLayer->setLayout(layout);
+    m_buildingsLayer->setMaxVisibleRange(20000.0);
+
+    m_map->addLayer(m_buildingsLayer.get());
+}
+
+void OsgEarthRenderer2::removeBuildings() {
+    if (!m_buildingsLayer) return;
+    m_map->removeLayer(m_buildingsLayer.get());
+    m_buildingsLayer = nullptr;
 }
 
 void OsgEarthRenderer2::addStreets() {
@@ -256,12 +267,15 @@ void OsgEarthRenderer2::synchronize(QQuickFramebufferObject *item) {
     if (camera && camera->getViewport()) {
         camera->getViewport()->setViewport(0, 0, size.width(), size.height());
         camera->setProjectionMatrixAsPerspective(30.0, size.width() / (double)size.height(), 1.0, 10000.0);
+
+        camera->getOrCreateStateSet()->setMode(GL_DEPTH_TEST, osg::StateAttribute::ON);
+        camera->setRenderOrder(osg::Camera::POST_RENDER);
+
+        camera->setViewMatrix(osg::Matrix::scale(1.0, -1.0, 1.0) * camera->getViewMatrix());
     }
-    qDebug() << "Sync size:" << size;
 }
 
 void OsgEarthRenderer2::handleMouseEvent(QMouseEvent* event) {
-    qDebug() << "Inside Mouse Handler";
     if (!m_viewer) return;
     osgGA::GUIEventAdapter::EventType eaType;
 
@@ -277,6 +291,34 @@ void OsgEarthRenderer2::handleMouseEvent(QMouseEvent* event) {
     case Qt::LeftButton: button = 1; break;
     case Qt::MiddleButton: button = 2; break;
     case Qt::RightButton: button = 3; break;
+    case Qt::NoButton:
+    case Qt::BackButton:
+    case Qt::ForwardButton:
+    case Qt::TaskButton:
+    case Qt::ExtraButton4:
+    case Qt::ExtraButton5:
+    case Qt::ExtraButton6:
+    case Qt::ExtraButton7:
+    case Qt::ExtraButton8:
+    case Qt::ExtraButton9:
+    case Qt::ExtraButton10:
+    case Qt::ExtraButton11:
+    case Qt::ExtraButton12:
+    case Qt::ExtraButton13:
+    case Qt::ExtraButton14:
+    case Qt::ExtraButton15:
+    case Qt::ExtraButton16:
+    case Qt::ExtraButton17:
+    case Qt::ExtraButton18:
+    case Qt::ExtraButton19:
+    case Qt::ExtraButton20:
+    case Qt::ExtraButton21:
+    case Qt::ExtraButton22:
+    case Qt::ExtraButton23:
+    case Qt::ExtraButton24:
+    case Qt::AllButtons:
+    case Qt::MouseButtonMask:
+        break;
     }
 
     auto queue = m_viewer->getEventQueue();
@@ -291,11 +333,58 @@ void OsgEarthRenderer2::handleMouseEvent(QMouseEvent* event) {
 }
 
 void OsgEarthRenderer2::handleWheelEvent(QWheelEvent* event) {
-    qDebug() << "Inside Wheel Handler";
-
     auto queue = m_viewer->getEventQueue();
-    if (queue) {
-        float delta = event->angleDelta().y() / 120.0f;
-        queue->mouseScroll((delta > 0) ? osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN);
+    if (!queue) return;
+
+    float delta = event->angleDelta().y() / 120.0f;
+    queue->mouseScroll((delta > 0) ? osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN);
+}
+
+void OsgEarthRenderer2::focusBoston() {
+    auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
+    if (manip) {
+        manip->setViewpoint(osgEarth::Viewpoint(
+                                "Boston",   // label
+                                -71.0763,   // longitude
+                                42.34425,   // latitude
+                                0,          // altitude (m)
+                                0,          // heading (deg)
+                                -45.0,      // pitch (deg)
+                                5000.0      // range (m)
+                                ), 3.0);    // 3s animation
+    }
+}
+
+void OsgEarthRenderer2::setMode2D(bool enable2D) {
+    if (_is2D == enable2D) return;
+    _is2D = enable2D;
+
+    auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
+    if (!manip) return;
+
+    if (_is2D) {
+        manip->setViewpoint(osgEarth::Viewpoint(
+                                "2DView",   // label
+                                -71.0763,   // longitude
+                                42.34425,   // latitude
+                                0,          // altitude (m)
+                                0,          // heading (deg)
+                                -90.0,      // pitch (deg)
+                                5000.0      // range (m)
+                                ), 3.0);    // 3s animation
+    } else {
+        manip->setViewpoint(osgEarth::Viewpoint(
+                                "3DView",
+                                -71.0763, 42.34425, 0,
+                                24.261, -21.6, 3450.0
+                                ), 2.0);
+    }
+}
+
+void OsgEarthRenderer2::toggleBuildings() {
+    if (m_buildingsLayer) {
+        removeBuildings();
+    } else {
+        addBuildings();
     }
 }

@@ -7,6 +7,9 @@ class OsgEarthItem2 : public QQuickFramebufferObject {
 public:
     explicit OsgEarthItem2(QQuickItem* parent = nullptr);
     Renderer *createRenderer() const override;
+    Q_INVOKABLE void focusBoston();
+    Q_INVOKABLE void setMode2D(bool enable);
+    Q_INVOKABLE void toggleBuildings();
 
 protected:
     void mousePressEvent(QMouseEvent* event) override;

@@ -216,6 +216,7 @@
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/ArgumentParser \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Array \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/AttributeDispatchers \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/AutoTransform \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Billboard \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/BoundingBox \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/BoundingSphere \
@@ -256,6 +257,7 @@
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/LOD \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Light \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/LightSource \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Material \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Math \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Matrix \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/MatrixTransform \
@@ -290,11 +292,14 @@
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/StateSet \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Stats \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Switch \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/TexEnv \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Texture \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Texture2D \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Texture2DArray \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/TextureBuffer \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Timer \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Transform \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/TriangleIndexFunctor \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Types \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/Uniform \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osg/UserDataContainer \
@@ -371,6 +376,14 @@
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgGA/GUIActionAdapter \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgGA/GUIEventAdapter \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgGA/GUIEventHandler \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/Export \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/Font \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/Glyph \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/KerningType \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/String \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/Style \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/Text \
+  /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgText/TextBase \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgUtil/CullVisitor \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgUtil/Export \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgUtil/GLObjectsVisitor \
@@ -392,6 +405,8 @@
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgViewer/View \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgViewer/Viewer \
   /home/canhdx/Setup/VISG/OSG/OSG-3.6.5/OpenSceneGraph/install/include/osgViewer/ViewerBase \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/AltitudeSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/BBoxSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Bounds \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/BuildConfig \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Cache \
@@ -402,49 +417,103 @@
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Common \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Config \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Containers \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/CoverageSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/CullingUtils \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/DateTime \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/DepthOffset \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/DrawInstanced \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Elevation \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ElevationLayer \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ElevationPool \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Ellipsoid \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Export \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Expression \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Extension \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ExtrusionSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FadeEffect \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Feature \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureCursor \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureDisplayLayout \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureIndex \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureModelLayer \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureModelSource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureSource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FeatureSourceIndexNode \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Fill \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Filter \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/FilterContext \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/GeoCommon \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/GeoData \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/GeoMath \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/GeoTransform \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Geoid \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Geometry \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/GeometryCompiler \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Horizon \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/IOTypes \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/IconSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ImageUtils \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/InstanceResource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/InstanceSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Layer \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/LayerReference \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/LayerShader \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/LineSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/LoadableNode \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Map \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/MapCallback \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/MapNode \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Math \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/MemCache \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ModelResource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ModelSource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ModelSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/NodeUtils \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Notify \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ObjectIndex \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/PBRMaterial \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/PagedNode \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/PluginLoader \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/PointSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/PolygonSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Profile \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Progress \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Query \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Random \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/RefinePolicy \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Registry \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/RenderSymbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ResampleFilter \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Resource \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ResourceCache \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ResourceLibrary \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Revisioning \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/SceneGraphCallback \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Session \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ShaderGenerator \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ShaderLoader \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/ShaderUtils \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Skins \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/SpatialReference \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/StateSetCache \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Status \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/StringUtils \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Stroke \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Style \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/StyleSelector \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/StyleSheet \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Symbol \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Tags \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Terrain \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/TerrainOptions \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/TerrainResources \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/TextSymbol \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Threading \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/TileKey \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/TileLayer \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/URI \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Units \
+  /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/Utils \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/VerticalDatum \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/VirtualProgram \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/VisibleLayer \
