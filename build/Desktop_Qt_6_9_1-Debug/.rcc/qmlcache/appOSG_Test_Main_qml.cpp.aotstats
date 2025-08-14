@@ -6,34 +6,50 @@
                     {
                         "codegenSuccessful": true,
                         "column": 12,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 12
+                        "line": 14
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 13,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 13
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "openExternal",
+                        "line": 101
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "closeExternal",
+                        "line": 107
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 67
+                        "line": 69
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 31,
+                        "durationMicroseconds": 26,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 66
+                        "line": 68
                     },
                     {
                         "codegenSuccessful": false,
@@ -41,7 +57,47 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"fill\".",
                         "functionName": "fill",
-                        "line": 72
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 84
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 94
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 128
                     }
                 ],
                 "filePath": "/home/canhdx/TestOSG/Main.qml"

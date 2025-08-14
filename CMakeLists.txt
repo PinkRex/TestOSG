@@ -31,7 +31,7 @@ qt_add_executable(appOSG_Test
 
 qt_add_resources(appOSG_Test "Resource"
     PREFIX "/"
-    FILES images/leftBg.jpg images/rightBg.jpg images/whiteBg.png images/leftBtn.jpg images/rightBtn.jpg
+    FILES images/background.jpg images/leftBtn.jpg images/rightBtn.jpg
 )
 
 qt_add_qml_module(appOSG_Test
@@ -42,12 +42,11 @@ qt_add_qml_module(appOSG_Test
         SOURCES osgearthitem2.h osgearthitem2.cpp
         SOURCES osgearthrenderer2.h osgearthrenderer2.cpp
         SOURCES Template.cpp
-        QML_FILES StartUpUI.qml
-        RESOURCES
-        QML_FILES ModeChooserUI.qml
-        RESOURCES images/leftBg.jpg images/leftBtn.jpg images/rightBg.jpg images/rightBtn.jpg images/whiteBg.png
-        RESOURCES
+        RESOURCES images/background.jpg images/leftBtn.jpg images/rightBtn.jpg
         RESOURCES Resource.qrc
+        QML_FILES Views/StartUpUI.qml
+        QML_FILES Views/ModeChooserUI.qml
+        QML_FILES Views/3DViewer_Test.qml
 )
 
 set_target_properties(appOSG_Test PROPERTIES

@@ -2,6 +2,6 @@ module OSG_Test
 typeinfo appOSG_Test.qmltypes
 prefer :/qt/qml/OSG_Test/
 Main 1.0 Main.qml
-StartUpUI 1.0 StartUpUI.qml
-ModeChooserUI 1.0 ModeChooserUI.qml
+StartUpUI 1.0 Views/StartUpUI.qml
+ModeChooserUI 1.0 Views/ModeChooserUI.qml
 

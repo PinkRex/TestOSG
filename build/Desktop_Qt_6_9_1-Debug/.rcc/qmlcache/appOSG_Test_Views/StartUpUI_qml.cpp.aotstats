@@ -1,0 +1,148 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "width",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 105,
+                        "errorMessage": "Cannot access value for name root",
+                        "functionName": "height",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 160,
+                        "errorMessage": "Cannot access value for name sourceBackgroundImage",
+                        "functionName": "source",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name glassPanel",
+                        "functionName": "width",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 25,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot access value for name glassPanel",
+                        "functionName": "height",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 25,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot access value for name glassPanel",
+                        "functionName": "radius",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 44
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 64
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 88
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 118,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 88
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 89
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 139,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 89
+                    }
+                ],
+                "filePath": "/home/canhdx/TestOSG/Views/StartUpUI.qml"
+            }
+        ],
+        "moduleId": "OSG_Test(appOSG_Test)"
+    }
+]

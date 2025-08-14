@@ -1,10 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/leftBg.jpg</file>
         <file>images/leftBtn.jpg</file>
-        <file>images/Resource.qrc</file>
-        <file>images/rightBg.jpg</file>
         <file>images/rightBtn.jpg</file>
-        <file>images/whiteBg.png</file>
+        <file>images/background.jpg</file>
     </qresource>
 </RCC>

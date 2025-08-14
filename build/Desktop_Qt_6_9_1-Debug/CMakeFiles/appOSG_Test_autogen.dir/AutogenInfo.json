@@ -1094,6 +1094,8 @@
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/canhdx/Qt/Tools/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake"
@@ -1196,10 +1198,12 @@
 	[
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_Resource.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0_extra_qmldirs.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
-		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_ModeChooserUI_qml.cpp",
-		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_StartUpUI_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/3DViewer_Test_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/ModeChooserUI_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/StartUpUI_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
 	],
@@ -1224,10 +1228,12 @@
 	[
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_Resource.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0_extra_qmldirs.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
-		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_ModeChooserUI_qml.cpp",
-		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_StartUpUI_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/3DViewer_Test_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/ModeChooserUI_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/StartUpUI_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_qmlcache_loader.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/apposg_test_qmltyperegistrations.cpp"
 	],
