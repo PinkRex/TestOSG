@@ -202,3 +202,16 @@
 398	1611	1755166498570031707	CMakeFiles/appOSG_Test.dir/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp.o	fb335e5915503713
 398	3850	1755166500810046370	CMakeFiles/appOSG_Test.dir/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp.o	6ae6d264ef288311
 3850	4868	1755166501822052547	appOSG_Test	c5ed5fd2aab55977
+2	4	1755167483028993895	.qt/appOSG_Test_qml.txt	64c46a3188775aa3
+2	4	1755167483028993895	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/appOSG_Test_qml.txt	64c46a3188775aa3
+2	60	1755167483084999897	.qt/qml_imports/appOSG_Test_build.cmake	dd4730166bb6a003
+2	60	1755167483084999897	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_build.cmake	dd4730166bb6a003
+60	121	1755167483141005899	.rcc/qmlcache/appOSG_Test_Main_qml.cpp	69adc2981cea166d
+60	121	1755167483141005899	.rcc/qmlcache/appOSG_Test_Main_qml.cpp.aotstats	69adc2981cea166d
+60	121	1755167483141005899	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp	69adc2981cea166d
+60	121	1755167483141005899	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp.aotstats	69adc2981cea166d
+61	383	1755167483381031620	.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp	4ab8213f7db105e5
+61	383	1755167483381031620	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp	4ab8213f7db105e5
+383	1570	1755167484593161198	CMakeFiles/appOSG_Test.dir/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp.o	fb335e5915503713
+383	3711	1755167486733388105	CMakeFiles/appOSG_Test.dir/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0.cpp.o	6ae6d264ef288311
+3711	4710	1755167487729492883	appOSG_Test	c5ed5fd2aab55977
