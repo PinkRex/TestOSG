@@ -506,6 +506,14 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6OpenGLPrivate/Qt6OpenGLPrivateDependencies.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6OpenGLPrivate/Qt6OpenGLPrivateTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6OpenGLPrivate/Qt6OpenGLPrivateVersionlessAliasTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginAdditionalTargetInfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginTargets-relwithdebinfo.cmake \
@@ -543,6 +551,10 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6labsmodelspluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6labsmodelspluginTargets-relwithdebinfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6labsmodelspluginTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginAdditionalTargetInfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginTargets-relwithdebinfo.cmake \
@@ -579,6 +591,10 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargets-relwithdebinfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dphysicspluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dphysicspluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dphysicspluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dphysicspluginTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dpluginAdditionalTargetInfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dpluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dpluginTargets-relwithdebinfo.cmake \
@@ -595,6 +611,14 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Config.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets-relwithdebinfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginAdditionalTargetInfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginTargets-relwithdebinfo.cmake \
@@ -627,6 +651,10 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dparticles3dpluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dparticles3dpluginTargets-relwithdebinfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dparticles3dpluginTargets.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dphysicshelperspluginAdditionalTargetInfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dphysicshelperspluginConfig.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dphysicshelperspluginTargets-relwithdebinfo.cmake \
+	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dphysicshelperspluginTargets.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginAdditionalTargetInfo.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginConfig.cmake \
 	/home/canhdx/Qt/6.9.1/gcc_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginTargets-relwithdebinfo.cmake \

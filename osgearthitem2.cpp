@@ -19,7 +19,10 @@ QQuickFramebufferObject::Renderer* OsgEarthItem2::createRenderer() const {
 }
 
 void OsgEarthItem2::mousePressEvent(QMouseEvent* event) {
-    if (m_renderer) m_renderer->handleMouseEvent(event);
+    if (m_renderer) {
+        m_renderer->handleMouseEvent(event);
+        m_renderer->handleMousePressEvent(event);
+    }
     QQuickFramebufferObject::mousePressEvent(event);
 }
 
@@ -48,4 +51,12 @@ void OsgEarthItem2::setMode2D(bool enable) {
 
 void OsgEarthItem2::toggleBuildings() {
     if (m_renderer) m_renderer->toggleBuildings();
+}
+
+void OsgEarthItem2::toggleStreets() {
+    if (m_renderer) m_renderer->toggleStreets();
+}
+
+void OsgEarthItem2::toggleParks() {
+    if (m_renderer) m_renderer->toggleParks();
 }

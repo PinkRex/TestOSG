@@ -43,7 +43,9 @@ template <> constexpr inline auto OsgEarthItem2::qt_create_metaobjectdata<qt_met
         "",
         "setMode2D",
         "enable",
-        "toggleBuildings"
+        "toggleBuildings",
+        "toggleStreets",
+        "toggleParks"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -55,6 +57,10 @@ template <> constexpr inline auto OsgEarthItem2::qt_create_metaobjectdata<qt_met
         }}),
         // Method 'toggleBuildings'
         QtMocHelpers::MethodData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'toggleStreets'
+        QtMocHelpers::MethodData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'toggleParks'
+        QtMocHelpers::MethodData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -81,6 +87,8 @@ void OsgEarthItem2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 0: _t->focusBoston(); break;
         case 1: _t->setMode2D((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 2: _t->toggleBuildings(); break;
+        case 3: _t->toggleStreets(); break;
+        case 4: _t->toggleParks(); break;
         default: ;
         }
     }
@@ -105,14 +113,14 @@ int OsgEarthItem2::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

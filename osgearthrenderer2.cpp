@@ -5,9 +5,11 @@
 #include <osgEarth/TMS>
 #include <osgEarth/FeatureModelLayer>
 #include <osgEarth/OGRFeatureSource>
-
 #include <osgViewer/ViewerEventHandlers>
+#include <osgEarth/TerrainEngineNode>
+
 #include <QOpenGLFramebufferObject>
+#include <QTimer>
 
 #define IMAGERY_URL      "http://readymap.org/readymap/tiles/1.0.0/22/"
 #define ELEVATION_URL    "http://readymap.org/readymap/tiles/1.0.0/116/"
@@ -19,8 +21,6 @@
 
 OsgEarthRenderer2::OsgEarthRenderer2() {
     osgEarth::initialize();
-    // osgEarth::setNotifyLevel(osg::DEBUG_INFO);
-
     m_viewer = new osgViewer::Viewer;
     m_viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);
     m_viewer->getEventHandlers().clear();
@@ -28,10 +28,6 @@ OsgEarthRenderer2::OsgEarthRenderer2() {
     m_viewer->addEventHandler(new osgViewer::StatsHandler);
 
     osg::ref_ptr<osg::GraphicsContext::Traits> traits = new osg::GraphicsContext::Traits;
-    // traits->x = 0;
-    // traits->y = 0;
-    // traits->width = 1;
-    // traits->height = 1;
     traits->windowDecoration = false;
     traits->doubleBuffer = true;
     traits->sharedContext = 0;
@@ -60,6 +56,7 @@ void OsgEarthRenderer2::initOsgEarthScene() {
     addStreets();
     addParks();
 
+    _isBusy = false;
     m_mapNode = new osgEarth::MapNode(m_map.get());
     osg::Group* root = new osg::Group;
     root->addChild(m_mapNode.get());
@@ -93,7 +90,7 @@ void OsgEarthRenderer2::addElevation() {
 }
 
 void OsgEarthRenderer2::addBuildings() {
-    if (m_buildingsLayer) return; // tránh add nhiều lần
+    if (m_buildingsLayer) return;
     osgEarth::OGRFeatureSource* data = new osgEarth::OGRFeatureSource();
     data->setName("buildings-data");
     data->setURL(BUILDINGS_URL);
@@ -102,7 +99,6 @@ void OsgEarthRenderer2::addBuildings() {
     if (!status.isOK()) {
         qDebug() << "Open failed:" << QString::fromStdString(status.message());
     }
-
 
     osgEarth::Style buildingStyle;
     buildingStyle.setName( "default" );
@@ -120,7 +116,7 @@ void OsgEarthRenderer2::addBuildings() {
     alt->clamping() = alt->CLAMP_TO_TERRAIN;
     alt->binding() = alt->BINDING_VERTEX;
 
-    osgEarth::Style wallStyle;
+    osgEarth::Style wallStyle;if (m_buildingsLayer) return;
     wallStyle.setName( "building-wall" );
     osgEarth::SkinSymbol* wallSkin = wallStyle.getOrCreate<osgEarth::SkinSymbol>();
     wallSkin->library() = "us_resources";
@@ -146,15 +142,6 @@ void OsgEarthRenderer2::addBuildings() {
     osgEarth::FeatureDisplayLayout layout;
     layout.tileSize() = 500;
 
-    // osgEarth::FeatureModelLayer* layer = new osgEarth::FeatureModelLayer();
-    // layer->setName("Buildings");
-    // layer->setFeatureSource(data);
-    // layer->setStyleSheet(styleSheet);
-    // layer->setLayout(layout);
-    // layer->setMaxVisibleRange(20000.0);
-
-    // m_map->addLayer(layer);
-
     m_buildingsLayer = new osgEarth::FeatureModelLayer();
     m_buildingsLayer->setName("Buildings");
     m_buildingsLayer->setFeatureSource(data);
@@ -172,6 +159,7 @@ void OsgEarthRenderer2::removeBuildings() {
 }
 
 void OsgEarthRenderer2::addStreets() {
+    if (m_streetsLayer) return;
     osgEarth::OGRFeatureSource* data = new osgEarth::OGRFeatureSource();
     data->setURL(STREETS_URL);
     data->options().buildSpatialIndex() = true;
@@ -198,18 +186,25 @@ void OsgEarthRenderer2::addStreets() {
     osgEarth::FeatureDisplayLayout layout;
     layout.tileSize() = 500;
 
-    osgEarth::FeatureModelLayer* layer = new osgEarth::FeatureModelLayer();
-    layer->setName("Streets");
-    layer->setFeatureSource(data);
-    layer->options().layout() = layout;
-    layer->setStyleSheet(new osgEarth::StyleSheet());
-    layer->getStyleSheet()->addStyle(style);
-    layer->setMaxVisibleRange(5000.0f);
+    m_streetsLayer = new osgEarth::FeatureModelLayer();
+    m_streetsLayer->setName("Streets");
+    m_streetsLayer->setFeatureSource(data);
+    m_streetsLayer->options().layout() = layout;
+    m_streetsLayer->setStyleSheet(new osgEarth::StyleSheet());
+    m_streetsLayer->getStyleSheet()->addStyle(style);
+    m_streetsLayer->setMaxVisibleRange(5000.0f);
 
-    m_map->addLayer(layer);
+    m_map->addLayer(m_streetsLayer.get());
+}
+
+void OsgEarthRenderer2::removeStreets() {
+    if (!m_streetsLayer) return;
+    m_map->removeLayer(m_streetsLayer.get());
+    m_streetsLayer = nullptr;
 }
 
 void OsgEarthRenderer2::addParks() {
+    if (m_parksLayer) return;
     osgEarth::OGRFeatureSource* data = new osgEarth::OGRFeatureSource();
     data->setURL(PARKS_URL);
     data->options().buildSpatialIndex() = true;
@@ -233,13 +228,19 @@ void OsgEarthRenderer2::addParks() {
     layout.tileSize() = 650;
     layout.addLevel(osgEarth::FeatureLevel(0.0f, 2000.0f, "parks"));
 
-    osgEarth::FeatureModelLayer* layer = new osgEarth::FeatureModelLayer();
-    layer->setFeatureSource(data);
-    layer->options().layout() = layout;
-    layer->setStyleSheet(new osgEarth::StyleSheet());
-    layer->getStyleSheet()->addStyle(style);
+    m_parksLayer = new osgEarth::FeatureModelLayer();
+    m_parksLayer->setFeatureSource(data);
+    m_parksLayer->options().layout() = layout;
+    m_parksLayer->setStyleSheet(new osgEarth::StyleSheet());
+    m_parksLayer->getStyleSheet()->addStyle(style);
 
-    m_map->addLayer(layer);
+    m_map->addLayer(m_parksLayer.get());
+}
+
+void OsgEarthRenderer2::removeParks() {
+    if (!m_parksLayer) return;
+    m_map->removeLayer(m_parksLayer.get());
+    m_parksLayer = nullptr;
 }
 
 QOpenGLFramebufferObject *OsgEarthRenderer2::createFramebufferObject(const QSize &size) {
@@ -271,7 +272,7 @@ void OsgEarthRenderer2::synchronize(QQuickFramebufferObject *item) {
         camera->getOrCreateStateSet()->setMode(GL_DEPTH_TEST, osg::StateAttribute::ON);
         camera->setRenderOrder(osg::Camera::POST_RENDER);
 
-        camera->setViewMatrix(osg::Matrix::scale(1.0, -1.0, 1.0) * camera->getViewMatrix());
+        camera->setViewMatrix(camera->getViewMatrix());
     }
 }
 
@@ -332,6 +333,37 @@ void OsgEarthRenderer2::handleMouseEvent(QMouseEvent* event) {
     }
 }
 
+void OsgEarthRenderer2::handleMousePressEvent(QMouseEvent *event)
+{
+    if (!m_mapNode) return;
+    osgViewer::View* view = m_viewer.get();
+    if (!view) return;
+
+    osg::Viewport* vp = view->getCamera()->getViewport();
+    if (!vp) return;
+
+    int fboW = this->framebufferObject()->width();
+    int fboH = this->framebufferObject()->height();
+
+    double osgX = event->pos().x() * (vp->width() / (double)fboW);
+    double osgY = (fboH - event->pos().y()) * (vp->height() / (double)fboH);
+
+    osgEarth::GeoPoint geo;
+    auto hit = m_mapNode->getGeoPointUnderMouse(view, osgX, osgY);
+
+    if (hit.isValid())
+    {
+        double lon, lat;
+        // geo.(lon, lat);
+        qDebug() << "Lat:" << lat << "Lon:" << lon;
+    }
+    else
+    {
+        qDebug() << "No hit";
+    }
+}
+
+
 void OsgEarthRenderer2::handleWheelEvent(QWheelEvent* event) {
     auto queue = m_viewer->getEventQueue();
     if (!queue) return;
@@ -382,9 +414,59 @@ void OsgEarthRenderer2::setMode2D(bool enable2D) {
 }
 
 void OsgEarthRenderer2::toggleBuildings() {
+    if (_isBusy) return;
+    _isBusy = true;
+
     if (m_buildingsLayer) {
         removeBuildings();
+        QTimer::singleShot(50, [this]() {
+            _isBusy = false;
+        });
     } else {
-        addBuildings();
+        QTimer::singleShot(0, [this]() {
+            addBuildings();
+            _isBusy = false;
+        });
     }
+
+    _isBusy = false;
+}
+
+void OsgEarthRenderer2::toggleStreets() {
+    if (_isBusy) return;
+    _isBusy = true;
+
+    if (m_streetsLayer) {
+        removeStreets();
+        QTimer::singleShot(50, [this]() {
+            _isBusy = false;
+        });
+    } else {
+        QTimer::singleShot(0, [this]() {
+            addStreets();
+            _isBusy = false;
+        });
+    }
+
+    _isBusy = false;
+}
+
+void OsgEarthRenderer2::toggleParks() {
+    if (_isBusy) return;
+
+    _isBusy = true;
+
+    if (m_parksLayer) {
+        removeParks();
+        QTimer::singleShot(50, [this]() {
+            _isBusy = false;
+        });
+    } else {
+        QTimer::singleShot(0, [this]() {
+            addParks();
+            _isBusy = false;
+        });
+    }
+
+    _isBusy = false;
 }

@@ -10,6 +10,8 @@ public:
     Q_INVOKABLE void focusBoston();
     Q_INVOKABLE void setMode2D(bool enable);
     Q_INVOKABLE void toggleBuildings();
+    Q_INVOKABLE void toggleStreets();
+    Q_INVOKABLE void toggleParks();
 
 protected:
     void mousePressEvent(QMouseEvent* event) override;

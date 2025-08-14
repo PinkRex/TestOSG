@@ -1,6 +1,14 @@
 <RCC>
   <qresource prefix="/qt/qml/OSG_Test/">
     <file alias="Main.qml">/home/canhdx/TestOSG/Main.qml</file>
+    <file alias="StartUpUI.qml">/home/canhdx/TestOSG/StartUpUI.qml</file>
+    <file alias="ModeChooserUI.qml">/home/canhdx/TestOSG/ModeChooserUI.qml</file>
+    <file alias="images/leftBg.jpg">/home/canhdx/TestOSG/images/leftBg.jpg</file>
+    <file alias="images/leftBtn.jpg">/home/canhdx/TestOSG/images/leftBtn.jpg</file>
+    <file alias="images/rightBg.jpg">/home/canhdx/TestOSG/images/rightBg.jpg</file>
+    <file alias="images/rightBtn.jpg">/home/canhdx/TestOSG/images/rightBtn.jpg</file>
+    <file alias="images/whiteBg.png">/home/canhdx/TestOSG/images/whiteBg.png</file>
+    <file alias="Resource.qrc">/home/canhdx/TestOSG/Resource.qrc</file>
   </qresource>
 </RCC>
 

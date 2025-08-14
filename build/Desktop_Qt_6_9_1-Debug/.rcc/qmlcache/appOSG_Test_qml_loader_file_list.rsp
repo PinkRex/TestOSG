@@ -1,5 +1,9 @@
 --resource
+/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/Resource.qrc
+--resource
 /home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qmake_OSG_Test.qrc
 --resource
 /home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/appOSG_Test_raw_qml_0.qrc
 /qt/qml/OSG_Test/Main.qml
+/qt/qml/OSG_Test/StartUpUI.qml
+/qt/qml/OSG_Test/ModeChooserUI.qml

@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="images/leftBg.jpg">/home/canhdx/TestOSG/images/leftBg.jpg</file>
+    <file alias="images/rightBg.jpg">/home/canhdx/TestOSG/images/rightBg.jpg</file>
+    <file alias="images/whiteBg.png">/home/canhdx/TestOSG/images/whiteBg.png</file>
+    <file alias="images/leftBtn.jpg">/home/canhdx/TestOSG/images/leftBtn.jpg</file>
+    <file alias="images/rightBtn.jpg">/home/canhdx/TestOSG/images/rightBtn.jpg</file>
+  </qresource>
+</RCC>
+

@@ -27,6 +27,18 @@
                     "index": 2,
                     "name": "toggleBuildings",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "toggleStreets",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "toggleParks",
+                    "returnType": "void"
                 }
             ],
             "object": true,
