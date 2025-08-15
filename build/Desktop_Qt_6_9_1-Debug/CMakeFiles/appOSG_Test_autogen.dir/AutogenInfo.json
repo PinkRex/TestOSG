@@ -1107,15 +1107,15 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/canhdx/TestOSG/osgearthitem2.h",
+			"/home/canhdx/TestOSG/OsgEarthItem_3D.h",
 			"MU",
-			"EWIEGA46WW/moc_osgearthitem2.cpp",
+			"EWIEGA46WW/moc_OsgEarthItem_3D.cpp",
 			null
 		],
 		[
-			"/home/canhdx/TestOSG/osgearthrenderer2.h",
+			"/home/canhdx/TestOSG/OsgEarthRenderer_3D.h",
 			"MU",
-			"EWIEGA46WW/moc_osgearthrenderer2.cpp",
+			"EWIEGA46WW/moc_OsgEarthRenderer_3D.cpp",
 			null
 		]
 	],
@@ -1201,6 +1201,7 @@
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0_extra_qmldirs.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/2DViewer_Test_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/3DViewer_Test_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/ModeChooserUI_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/StartUpUI_qml.cpp",
@@ -1217,10 +1218,10 @@
 	"SETTINGS_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/canhdx/TestOSG/OsgEarthItem_3D.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/OsgEarthRenderer_3D.cpp", "MU", null ],
 		[ "/home/canhdx/TestOSG/Template.cpp", "MU", null ],
-		[ "/home/canhdx/TestOSG/main.cpp", "MU", null ],
-		[ "/home/canhdx/TestOSG/osgearthitem2.cpp", "MU", null ],
-		[ "/home/canhdx/TestOSG/osgearthrenderer2.cpp", "MU", null ]
+		[ "/home/canhdx/TestOSG/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
@@ -1231,6 +1232,7 @@
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_appOSG_Test_raw_qml_0_extra_qmldirs.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/rcc/qrc_qmake_OSG_Test.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Main_qml.cpp",
+		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/2DViewer_Test_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/3DViewer_Test_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/ModeChooserUI_qml.cpp",
 		"/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.rcc/qmlcache/appOSG_Test_Views/StartUpUI_qml.cpp",

@@ -2,9 +2,9 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls
 
-import OsgEarth2 1.0
+import OsgEarth_3D 1.0
 Item {
-    OsgEarthItem2 {
+    OsgEarthItem_3D {
         id: earthItem
         anchors.fill: parent
         focus: true

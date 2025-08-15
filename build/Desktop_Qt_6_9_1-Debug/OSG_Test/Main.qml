@@ -5,7 +5,7 @@ import QtQuick.Layouts
 import QtQuick.Effects
 import Qt5Compat.GraphicalEffects
 
-import OsgEarth2 1.0
+import OsgEarth_3D 1.0
 import "Views"
 
 Window {

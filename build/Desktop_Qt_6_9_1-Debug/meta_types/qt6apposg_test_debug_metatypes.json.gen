@@ -2,7 +2,7 @@
     {
         "classes": [
             {
-                "className": "OsgEarthItem2",
+                "className": "OsgEarthItem_3D",
                 "lineNumber": 5,
                 "methods": [
                     {
@@ -43,7 +43,7 @@
                     }
                 ],
                 "object": true,
-                "qualifiedClassName": "OsgEarthItem2",
+                "qualifiedClassName": "OsgEarthItem_3D",
                 "superClasses": [
                     {
                         "access": "public",
@@ -52,7 +52,7 @@
                 ]
             }
         ],
-        "inputFile": "osgearthitem2.h",
+        "inputFile": "OsgEarthItem_3D.h",
         "outputRevision": 69
     }
 ]

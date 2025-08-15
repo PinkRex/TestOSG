@@ -1282,6 +1282,10 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/optional \
 	/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/weejobs.h \
 	/home/canhdx/TestOSG/CMakeLists.txt \
+	/home/canhdx/TestOSG/OsgEarthItem_3D.cpp \
+	/home/canhdx/TestOSG/OsgEarthItem_3D.h \
+	/home/canhdx/TestOSG/OsgEarthRenderer_3D.cpp \
+	/home/canhdx/TestOSG/OsgEarthRenderer_3D.h \
 	/home/canhdx/TestOSG/Template.cpp \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -1290,10 +1294,6 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h \
 	/home/canhdx/TestOSG/main.cpp \
-	/home/canhdx/TestOSG/osgearthitem2.cpp \
-	/home/canhdx/TestOSG/osgearthitem2.h \
-	/home/canhdx/TestOSG/osgearthrenderer2.cpp \
-	/home/canhdx/TestOSG/osgearthrenderer2.h \
 	/usr/include/GL/gl.h \
 	/usr/include/GL/glext.h \
 	/usr/include/KHR/khrplatform.h \

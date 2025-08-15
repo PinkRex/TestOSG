@@ -4,14 +4,12 @@
 #include <QDebug>
 #include <QSurfaceFormat>
 
-#include <osgearthitem2.h>
+#include <OsgEarthItem_3D.h>
 
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
     qputenv("QSG_RENDER_LOOP", "basic");
-
-    // osg::setNotifyLevel(osg::DEBUG_FP);
 
     QSurfaceFormat format;
     format.setRenderableType(QSurfaceFormat::OpenGL);
@@ -22,7 +20,7 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
     osgEarth::initialize();
-    qmlRegisterType<OsgEarthItem2>("OsgEarth2", 1, 0, "OsgEarthItem2");
+    qmlRegisterType<OsgEarthItem_3D>("OsgEarth_3D", 1, 0, "OsgEarthItem_3D");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl::fromLocalFile("/home/canhdx/TestOSG/Main.qml"));

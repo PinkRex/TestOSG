@@ -39,14 +39,15 @@ qt_add_qml_module(appOSG_Test
     VERSION 1.0
     QML_FILES
         Main.qml
-        SOURCES osgearthitem2.h osgearthitem2.cpp
-        SOURCES osgearthrenderer2.h osgearthrenderer2.cpp
+        SOURCES OsgEarthItem_3D.h OsgEarthItem_3D.cpp
+        SOURCES OsgEarthRenderer_3D.h OsgEarthRenderer_3D.cpp
         SOURCES Template.cpp
         RESOURCES images/background.jpg images/leftBtn.jpg images/rightBtn.jpg
         RESOURCES Resource.qrc
         QML_FILES Views/StartUpUI.qml
         QML_FILES Views/ModeChooserUI.qml
         QML_FILES Views/3DViewer_Test.qml
+        QML_FILES Views/2DViewer_Test.qml
 )
 
 set_target_properties(appOSG_Test PROPERTIES

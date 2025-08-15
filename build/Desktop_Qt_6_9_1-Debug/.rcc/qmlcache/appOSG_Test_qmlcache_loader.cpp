@@ -33,6 +33,13 @@ namespace _qt_qml_OSG_Test_Views_3DViewer_Test_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_OSG_Test_Views_2DViewer_Test_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -51,6 +58,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/OSG_Test/Views/StartUpUI.qml"), &QmlCacheGeneratedCode::_qt_qml_OSG_Test_Views_StartUpUI_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/OSG_Test/Views/ModeChooserUI.qml"), &QmlCacheGeneratedCode::_qt_qml_OSG_Test_Views_ModeChooserUI_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/OSG_Test/Views/3DViewer_Test.qml"), &QmlCacheGeneratedCode::_qt_qml_OSG_Test_Views_3DViewer_Test_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/OSG_Test/Views/2DViewer_Test.qml"), &QmlCacheGeneratedCode::_qt_qml_OSG_Test_Views_2DViewer_Test_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

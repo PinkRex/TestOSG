@@ -1,0 +1,12 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                ],
+                "filePath": "/home/canhdx/TestOSG/Views/2DViewer_Test.qml"
+            }
+        ],
+        "moduleId": "OSG_Test(appOSG_Test)"
+    }
+]

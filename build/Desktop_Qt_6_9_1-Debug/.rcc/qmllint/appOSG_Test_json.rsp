@@ -15,5 +15,6 @@
 /home/canhdx/TestOSG/Views/StartUpUI.qml
 /home/canhdx/TestOSG/Views/ModeChooserUI.qml
 /home/canhdx/TestOSG/Views/3DViewer_Test.qml
+/home/canhdx/TestOSG/Views/2DViewer_Test.qml
 --json
 /home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_qmllint.json

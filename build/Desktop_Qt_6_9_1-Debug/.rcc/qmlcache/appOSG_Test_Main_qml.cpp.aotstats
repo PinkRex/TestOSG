@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 12,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 14
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 13,
-                        "durationMicroseconds": 38,
+                        "durationMicroseconds": 37,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 15
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 5,
-                        "durationMicroseconds": 0,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "openExternal",
                         "line": 54
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 22
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 26,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 21
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 18,
-                        "durationMicroseconds": 57,
+                        "durationMicroseconds": 55,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 40
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 23,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 37
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 22,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 47
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 70
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 81

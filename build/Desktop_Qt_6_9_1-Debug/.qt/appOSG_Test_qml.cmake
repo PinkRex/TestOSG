@@ -10,6 +10,8 @@ set(src_and_dest_list
     "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/OSG_Test/Views/ModeChooserUI.qml"
     "/home/canhdx/TestOSG/Views/3DViewer_Test.qml"
     "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/OSG_Test/Views/3DViewer_Test.qml"
+    "/home/canhdx/TestOSG/Views/2DViewer_Test.qml"
+    "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/OSG_Test/Views/2DViewer_Test.qml"
 
 )
 set(timestamp_file "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/appOSG_Test_qml.txt")

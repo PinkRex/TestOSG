@@ -4,6 +4,7 @@
     <file alias="Views/StartUpUI.qml">/home/canhdx/TestOSG/Views/StartUpUI.qml</file>
     <file alias="Views/ModeChooserUI.qml">/home/canhdx/TestOSG/Views/ModeChooserUI.qml</file>
     <file alias="Views/3DViewer_Test.qml">/home/canhdx/TestOSG/Views/3DViewer_Test.qml</file>
+    <file alias="Views/2DViewer_Test.qml">/home/canhdx/TestOSG/Views/2DViewer_Test.qml</file>
     <file alias="images/background.jpg">/home/canhdx/TestOSG/images/background.jpg</file>
     <file alias="images/leftBtn.jpg">/home/canhdx/TestOSG/images/leftBtn.jpg</file>
     <file alias="images/rightBtn.jpg">/home/canhdx/TestOSG/images/rightBtn.jpg</file>
