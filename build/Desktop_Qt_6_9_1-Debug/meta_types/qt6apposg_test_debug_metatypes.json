@@ -3,7 +3,7 @@
         "classes": [
             {
                 "className": "OsgEarthItem_3D",
-                "lineNumber": 5,
+                "lineNumber": 6,
                 "methods": [
                     {
                         "access": "public",
@@ -53,6 +53,24 @@
             }
         ],
         "inputFile": "OsgEarthItem_3D.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "OsgEarthItem_2D",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "OsgEarthItem_2D",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickFramebufferObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "OsgEarthItem_2D.h",
         "outputRevision": 69
     }
 ]

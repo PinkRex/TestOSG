@@ -3,6 +3,7 @@ import QtQuick.Window 2.15
 import QtQuick.Controls
 
 import OsgEarth_3D 1.0
+
 Item {
     OsgEarthItem_3D {
         id: earthItem

@@ -4,7 +4,8 @@
 #include <QDebug>
 #include <QSurfaceFormat>
 
-#include <OsgEarthItem_3D.h>
+#include "3D_Handler/OsgEarthItem_3D.h"
+#include "2D_Handler/OsgEarthItem_2D.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     osgEarth::initialize();
     qmlRegisterType<OsgEarthItem_3D>("OsgEarth_3D", 1, 0, "OsgEarthItem_3D");
+    qmlRegisterType<OsgEarthItem_2D>("OsgEarth_2D", 1, 0, "OsgEarthItem_2D");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl::fromLocalFile("/home/canhdx/TestOSG/Main.qml"));

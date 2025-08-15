@@ -88,7 +88,7 @@ Item {
 
                     onEntered: button1.scale = 1.15
                     onExited:  button1.scale = 1.0
-                    onClicked: console.log("Function 1 clicked")
+                    onClicked: root.openExternal("Views/2DViewer_Test.qml")
                 }
 
                 Behavior on scale {

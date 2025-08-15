@@ -1107,15 +1107,27 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/canhdx/TestOSG/OsgEarthItem_3D.h",
+			"/home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.h",
 			"MU",
-			"EWIEGA46WW/moc_OsgEarthItem_3D.cpp",
+			"UGNU3LWYUV/moc_OsgEarthItem_2D.cpp",
 			null
 		],
 		[
-			"/home/canhdx/TestOSG/OsgEarthRenderer_3D.h",
+			"/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.h",
 			"MU",
-			"EWIEGA46WW/moc_OsgEarthRenderer_3D.cpp",
+			"UGNU3LWYUV/moc_OsgEarthRenderer_2D.cpp",
+			null
+		],
+		[
+			"/home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.h",
+			"MU",
+			"EIY5VPLZRW/moc_OsgEarthItem_3D.cpp",
+			null
+		],
+		[
+			"/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h",
+			"MU",
+			"EIY5VPLZRW/moc_OsgEarthRenderer_3D.cpp",
 			null
 		]
 	],
@@ -1218,9 +1230,12 @@
 	"SETTINGS_FILE" : "/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/appOSG_Test_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/canhdx/TestOSG/OsgEarthItem_3D.cpp", "MU", null ],
-		[ "/home/canhdx/TestOSG/OsgEarthRenderer_3D.cpp", "MU", null ],
-		[ "/home/canhdx/TestOSG/Template.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/TestItem.cpp", "MU", null ],
+		[ "/home/canhdx/TestOSG/TestRenderer.cpp", "MU", null ],
 		[ "/home/canhdx/TestOSG/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

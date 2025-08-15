@@ -1,0 +1,56 @@
+{
+    "classes": [
+        {
+            "className": "OsgEarthItem_3D",
+            "lineNumber": 6,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "focusBoston",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "enable",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "setMode2D",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "toggleBuildings",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "toggleStreets",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "toggleParks",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "OsgEarthItem_3D",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickFramebufferObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "OsgEarthItem_3D.h",
+    "outputRevision": 69
+}

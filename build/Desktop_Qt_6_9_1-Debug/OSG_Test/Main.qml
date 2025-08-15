@@ -13,7 +13,7 @@ Window {
     visible: true
     width: Screen.width
     height: Screen.height
-    title: qsTr("osgEarth in QML")
+    title: qsTr("GIS Data Preprocess Module")
 
     Image {
         id: sourceBackgroundImage

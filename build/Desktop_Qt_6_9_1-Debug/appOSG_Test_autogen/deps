@@ -1281,12 +1281,17 @@ appOSG_Test_autogen/timestamp: \
 	/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/VisibleLayer \
 	/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/optional \
 	/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/weejobs.h \
+	/home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.cpp \
+	/home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.h \
+	/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.cpp \
+	/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.h \
+	/home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.cpp \
+	/home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.h \
+	/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.cpp \
+	/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h \
 	/home/canhdx/TestOSG/CMakeLists.txt \
-	/home/canhdx/TestOSG/OsgEarthItem_3D.cpp \
-	/home/canhdx/TestOSG/OsgEarthItem_3D.h \
-	/home/canhdx/TestOSG/OsgEarthRenderer_3D.cpp \
-	/home/canhdx/TestOSG/OsgEarthRenderer_3D.h \
-	/home/canhdx/TestOSG/Template.cpp \
+	/home/canhdx/TestOSG/TestItem.cpp \
+	/home/canhdx/TestOSG/TestRenderer.cpp \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qt/qml_imports/appOSG_Test_conf.cmake \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \

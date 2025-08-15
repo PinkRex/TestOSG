@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 33)
+set(qml_import_scanner_imports_count 34)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QtQml;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "NAME;QML;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/QML;PREFER;:/qt-project.org/imports/QML/;RELATIVEPATH;QML;TYPE;module;")
@@ -31,5 +31,6 @@ set(qml_import_scanner_import_28 "CLASSNAME;QtGraphicalEffectsPlugin;COMPONENTS;
 set(qml_import_scanner_import_29 "CLASSNAME;QtGraphicalEffectsPrivatePlugin;COMPONENTS;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/DropShadowBase.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/FastGlow.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/FastInnerShadow.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/GaussianDirectionalBlur.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/GaussianGlow.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/GaussianInnerShadow.qml;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private/GaussianMaskedBlur.qml;LINKTARGET;Qt6::qtgraphicaleffectsprivate;NAME;Qt5Compat.GraphicalEffects.private;PATH;/home/canhdx/Qt/6.9.1/gcc_64/qml/Qt5Compat/GraphicalEffects/private;PLUGIN;qtgraphicaleffectsprivateplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/Qt5Compat/GraphicalEffects/private/;RELATIVEPATH;Qt5Compat/GraphicalEffects/private;TYPE;module;")
 set(qml_import_scanner_import_30 "NAME;OsgEarth_3D;TYPE;module;")
 set(qml_import_scanner_import_31 "NAME;Views;PATH;/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/OSG_Test/Views;TYPE;directory;")
-set(qml_import_scanner_import_32 "NAME;Views;PATH;/home/canhdx/TestOSG/Views;TYPE;directory;")
+set(qml_import_scanner_import_32 "NAME;OsgEarth_2D;TYPE;module;")
+set(qml_import_scanner_import_33 "NAME;Views;PATH;/home/canhdx/TestOSG/Views;TYPE;directory;")
 

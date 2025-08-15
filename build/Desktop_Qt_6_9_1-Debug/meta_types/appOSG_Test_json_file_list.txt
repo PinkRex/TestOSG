@@ -1,1 +1,2 @@
-/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EWIEGA46WW/moc_OsgEarthItem_3D.cpp.json
+/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../EIY5VPLZRW/moc_OsgEarthItem_3D.cpp.json
+/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/include/../UGNU3LWYUV/moc_OsgEarthItem_2D.cpp.json

@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "OsgEarthItem_2D",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "OsgEarthItem_2D",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickFramebufferObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "OsgEarthItem_2D.h",
+    "outputRevision": 69
+}

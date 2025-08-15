@@ -3,6 +3,38 @@
         "moduleFiles": [
             {
                 "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
+                        "functionName": "fill",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 25,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"bottom\".",
+                        "functionName": "bottom",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"horizontalCenter\".",
+                        "functionName": "horizontalCenter",
+                        "line": 17
+                    }
                 ],
                 "filePath": "/home/canhdx/TestOSG/Views/2DViewer_Test.qml"
             }

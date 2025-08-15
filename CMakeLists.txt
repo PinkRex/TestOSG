@@ -9,7 +9,6 @@ set(GDAL_ROOT /home/canhdx/Setup/VISG/GDAL/gdal-3.9.2/install)
 set(GEOS_ROOT /home/canhdx/Setup/VISG/GEOS/geos-3.12.3/install)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
-# find_package(GDAL REQUIRED)
 
 include_directories(${OSGEARTH_ROOT}/include)
 link_directories(${OSGEARTH_ROOT}/lib64)
@@ -39,15 +38,20 @@ qt_add_qml_module(appOSG_Test
     VERSION 1.0
     QML_FILES
         Main.qml
-        SOURCES OsgEarthItem_3D.h OsgEarthItem_3D.cpp
-        SOURCES OsgEarthRenderer_3D.h OsgEarthRenderer_3D.cpp
-        SOURCES Template.cpp
+        SOURCES 3D_Handler/OsgEarthItem_3D.h 3D_Handler/OsgEarthItem_3D.cpp
+        SOURCES 3D_Handler/OsgEarthRenderer_3D.h 3D_Handler/OsgEarthRenderer_3D.cpp
+        SOURCES 2D_Handler/OsgEarthItem_2D.h 2D_Handler/OsgEarthItem_2D.cpp
+        SOURCES 2D_Handler/OsgEarthRenderer_2D.h 2D_Handler/OsgEarthRenderer_2D.cpp
+
         RESOURCES images/background.jpg images/leftBtn.jpg images/rightBtn.jpg
         RESOURCES Resource.qrc
+
         QML_FILES Views/StartUpUI.qml
         QML_FILES Views/ModeChooserUI.qml
         QML_FILES Views/3DViewer_Test.qml
         QML_FILES Views/2DViewer_Test.qml
+        SOURCES TestRenderer.cpp
+        SOURCES TestItem.cpp
 )
 
 set_target_properties(appOSG_Test PROPERTIES

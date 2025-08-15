@@ -9,7 +9,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"fill\".",
                         "functionName": "fill",
-                        "line": 9
+                        "line": 10
                     },
                     {
                         "codegenSuccessful": false,
@@ -17,7 +17,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 17
+                        "line": 18
                     },
                     {
                         "codegenSuccessful": false,
@@ -25,7 +25,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"bottom\".",
                         "functionName": "bottom",
-                        "line": 15
+                        "line": 16
                     },
                     {
                         "codegenSuccessful": false,
@@ -33,7 +33,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"right\".",
                         "functionName": "right",
-                        "line": 16
+                        "line": 17
                     },
                     {
                         "codegenSuccessful": false,
@@ -41,7 +41,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"text\".",
                         "functionName": "text",
-                        "line": 22
+                        "line": 23
                     },
                     {
                         "codegenSuccessful": false,
@@ -49,7 +49,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"checkedChanged\".",
                         "functionName": "onCheckedChanged",
-                        "line": 26
+                        "line": 27
                     },
                     {
                         "codegenSuccessful": false,
@@ -57,7 +57,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"bottom\".",
                         "functionName": "bottom",
-                        "line": 24
+                        "line": 25
                     },
                     {
                         "codegenSuccessful": false,
@@ -65,15 +65,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"horizontalCenter\".",
                         "functionName": "horizontalCenter",
-                        "line": 25
+                        "line": 26
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 100,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "left",
-                        "line": 34
+                        "line": 35
                     },
                     {
                         "codegenSuccessful": true,
@@ -81,7 +81,7 @@
                         "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "bottom",
-                        "line": 35
+                        "line": 36
                     },
                     {
                         "codegenSuccessful": false,
@@ -89,7 +89,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 40
+                        "line": 41
                     },
                     {
                         "codegenSuccessful": false,
@@ -97,7 +97,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 45
+                        "line": 46
                     },
                     {
                         "codegenSuccessful": false,
@@ -105,7 +105,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 50
+                        "line": 51
                     },
                     {
                         "codegenSuccessful": false,
@@ -113,7 +113,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 55
+                        "line": 56
                     }
                 ],
                 "filePath": "/home/canhdx/TestOSG/Views/3DViewer_Test.qml"

@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 12,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 14
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 13,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 15
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 5,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "openExternal",
                         "line": 54
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 5,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
                         "functionName": "closeExternal",
                         "line": 60
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 59,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 22
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 32,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 21
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 18,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 40
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 26,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 37
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 22,
+                        "durationMicroseconds": 25,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 47
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 70
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 81
