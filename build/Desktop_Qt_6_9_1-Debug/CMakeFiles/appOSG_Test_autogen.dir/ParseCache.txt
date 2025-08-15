@@ -3,8 +3,8 @@
 /home/canhdx/TestOSG/OsgEarthRenderer_3D.h
 /home/canhdx/TestOSG/Template.cpp
 /home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.cpp
-/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.cpp
 /home/canhdx/TestOSG/main.cpp
+/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.cpp
 /home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.cpp
 /home/canhdx/TestOSG/OsgEarthItem_3D.cpp
 /home/canhdx/TestOSG/TestItem.cpp
@@ -1375,6 +1375,7 @@
  mdp:/home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/weejobs.h
  mdp:/home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.h
  mdp:/home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.h
+ mdp:/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h
  mdp:/home/canhdx/TestOSG/build/Desktop_Qt_6_9_1-Debug/appOSG_Test_autogen/moc_predefs.h
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/GL/glext.h
@@ -1699,7 +1700,6 @@
 /home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.h
 /home/canhdx/TestOSG/2D_Handler/OsgEarthItem_2D.cpp
 /home/canhdx/TestOSG/OsgEarthRenderer_3D.cpp
-/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h
 /home/canhdx/TestOSG/3D_Handler/OsgEarthItem_3D.h
  mmc:Q_OBJECT
  mdp:/home/canhdx/Qt/6.9.1/gcc_64/include/QtCore/QList
@@ -2544,3 +2544,4 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+/home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h

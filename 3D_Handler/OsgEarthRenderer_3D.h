@@ -20,6 +20,11 @@ public:
     void handleWheelEvent(QWheelEvent* event);
     // void handleKeyEvent(QKeyEvent* event);
 
+    void setCoordinate(double lat, double lon);
+
+    double _lat;
+    double _lon;
+
 public slots:
     void focusBoston();
     void setMode2D(bool enable2D);
@@ -36,6 +41,7 @@ private:
     osg::ref_ptr<osgEarth::FeatureModelLayer> m_parksLayer = nullptr;
     bool _is2D = false;
     bool _isBusy = false;
+
     void initOsgEarthScene();
     void addImagery();
     void addElevation();

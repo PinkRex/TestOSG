@@ -1,4 +1,6 @@
 #include "2D_Handler/OsgEarthRenderer_2D.h"
+#include "3D_Handler/OsgEarthRenderer_3D.h"
+
 #include <osgEarth/Map>
 #include <osgEarth/ImageLayer>
 #include <osgEarth/TMS>
@@ -17,7 +19,9 @@
 #include <QTimer>
 #include <QDebug>
 
-#define IMAGERY_URL      "http://[abc].tile.openstreetmap.org/{z}/{x}/{y}.png"
+// #define IMAGERY_URL      "http://[abc].tile.openstreetmap.org/{z}/{x}/{y}.png"
+#define IMAGERY_URL      "http://192.168.44.218:8881/google_satellite_no_hybrid/{z}/{x}/{y}.jpeg"
+// #define IMAGERY_URL      "http://192.168.44.11:8080/tile/{z}/{x}/{y}.png"
 
 OsgEarthRenderer_2D::OsgEarthRenderer_2D() {
     osgEarth::initialize();
@@ -33,7 +37,7 @@ OsgEarthRenderer_2D::OsgEarthRenderer_2D() {
     traits->width = 1024;
     traits->height = 768;
     traits->windowDecoration = false;
-    traits->doubleBuffer = true;
+    traits->doubleBuffer = false;
     traits->sharedContext = 0;
 
     osg::ref_ptr<osgViewer::GraphicsWindowEmbedded> gc = new osgViewer::GraphicsWindowEmbedded(traits.get());
@@ -94,7 +98,6 @@ QOpenGLFramebufferObject *OsgEarthRenderer_2D::createFramebufferObject(const QSi
 }
 
 void OsgEarthRenderer_2D::render() {
-    qDebug() << "Here";
     m_viewer->frame();
     update();
 }
@@ -111,7 +114,8 @@ void OsgEarthRenderer_2D::synchronize(QQuickFramebufferObject *item) {
     if (camera && camera->getViewport()) {
         camera->getViewport()->setViewport(0, 0, size.width(), size.height());
         camera->setProjectionMatrixAsOrtho2D(0, w, 0, h);
-        camera->setViewMatrix(osg::Matrix::identity()); // nhìn từ trên xuống
+        // camera->setViewMatrix(osg::Matrix::identity()); // nhìn từ trên xuống
+        camera->getOrCreateStateSet()->setMode(GL_BLEND, osg::StateAttribute::OFF);
         camera->getOrCreateStateSet()->setMode(GL_DEPTH_TEST, osg::StateAttribute::ON);
         camera->setRenderOrder(osg::Camera::POST_RENDER);
 
@@ -178,6 +182,7 @@ void OsgEarthRenderer_2D::handleMouseEvent(QMouseEvent* event) {
 
 void OsgEarthRenderer_2D::handleMousePressEvent(QMouseEvent *event) {
     if (!m_mapNode) return;
+
     osgViewer::View* view = m_viewer.get();
     if (!view) return;
 
@@ -187,17 +192,26 @@ void OsgEarthRenderer_2D::handleMousePressEvent(QMouseEvent *event) {
     int fboW = this->framebufferObject()->width();
     int fboH = this->framebufferObject()->height();
 
-    double osgX = event->pos().x() * (vp->width() / (double)fboW);
-    double osgY = (fboH - event->pos().y()) * (vp->height() / (double)fboH);
+    // double osgX = event->pos().x() * (vp->width() / (double)fboW);
+    // double osgY = (fboH - event->pos().y()) * (vp->height() / (double)fboH);
+
+    double osgX = vp->x() + (event->pos().x() * (vp->width()  / static_cast<double>(fboW)));
+    double osgY = vp->y() + ((fboH - event->pos().y()) * (vp->height() / static_cast<double>(fboH)));
 
     osgEarth::GeoPoint geo;
+    auto wgs84 = osgEarth::SpatialReference::get("wgs84");
+    double lon, lat;
     auto hit = m_mapNode->getGeoPointUnderMouse(view, osgX, osgY);
 
     if (hit.isValid())
     {
-        double lon, lat;
-        // geo.(lon, lat);
+        hit.transform(wgs84, geo);
+        geo.makeGeographic();
+        lon = geo.x();
+        lat = geo.y();
+
         qDebug() << "Lat:" << lat << "Lon:" << lon;
+        renderer_3D->setCoordinate(lat, lon);
     }
     else
     {
@@ -205,10 +219,31 @@ void OsgEarthRenderer_2D::handleMousePressEvent(QMouseEvent *event) {
     }
 }
 
+void OsgEarthRenderer_2D::focusHanoi() {
+    auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
+    if (manip) {
+        // Boston: Lat: -71.0763 Lon: 42.34425
+        manip->setViewpoint(osgEarth::Viewpoint(
+                                "Ha Noi",   // label
+                                105.84,   // longitude
+                                21.0078,   // latitude
+                                0,          // altitude (m)
+                                0,          // heading (deg)
+                                -90.0,      // pitch (deg)
+                                5000.0      // range (m)
+                                ), 3.0);    // 3s animation
+    }
+}
+
 void OsgEarthRenderer_2D::handleWheelEvent(QWheelEvent* event) {
     auto queue = m_viewer->getEventQueue();
     if (!queue) return;
 
+    queue->mouseMotion(event->position().x(), event->position().y());
     float delta = event->angleDelta().y() / 120.0f;
-    queue->mouseScroll((delta > 0) ? osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN);
+    if (delta > 0) {
+        queue->mouseScroll(osgGA::GUIEventAdapter::SCROLL_UP);
+    } else {
+        queue->mouseScroll(osgGA::GUIEventAdapter::SCROLL_DOWN);
+    }
 }

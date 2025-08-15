@@ -22,7 +22,7 @@ QQuickFramebufferObject::Renderer* OsgEarthItem_3D::createRenderer() const {
 void OsgEarthItem_3D::mousePressEvent(QMouseEvent* event) {
     if (m_renderer) {
         m_renderer->handleMouseEvent(event);
-        m_renderer->handleMousePressEvent(event);
+        // m_renderer->handleMousePressEvent(event);
     }
     QQuickFramebufferObject::mousePressEvent(event);
 }

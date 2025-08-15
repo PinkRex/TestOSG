@@ -8,6 +8,7 @@ class OsgEarthItem_2D : public QQuickFramebufferObject {
 public:
     explicit OsgEarthItem_2D(QQuickItem* parent = nullptr);
     Renderer *createRenderer() const override;
+    Q_INVOKABLE void focusHanoi();
 
 protected:
     void mousePressEvent(QMouseEvent* event) override;
@@ -16,5 +17,5 @@ protected:
     void wheelEvent(QWheelEvent* event) override;
 
 private:
-    OsgEarthRenderer_2D* m_renderer = nullptr;
+    OsgEarthRenderer_2D* m_renderer_2D = nullptr;
 };

@@ -3,6 +3,14 @@
         {
             "className": "OsgEarthItem_2D",
             "lineNumber": 6,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "focusHanoi",
+                    "returnType": "void"
+                }
+            ],
             "object": true,
             "qualifiedClassName": "OsgEarthItem_2D",
             "superClasses": [

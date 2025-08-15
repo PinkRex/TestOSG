@@ -3,6 +3,7 @@
 #include <osgEarth/LogarithmicDepthBuffer>
 #include <osgEarth/ImageLayer>
 #include <osgEarth/TMS>
+#include <osgEarth/XYZ>
 #include <osgEarth/FeatureModelLayer>
 #include <osgEarth/OGRFeatureSource>
 #include <osgViewer/ViewerEventHandlers>
@@ -11,8 +12,8 @@
 #include <QOpenGLFramebufferObject>
 #include <QTimer>
 
-#define IMAGERY_URL      "http://readymap.org/readymap/tiles/1.0.0/22/"
-#define ELEVATION_URL    "http://readymap.org/readymap/tiles/1.0.0/116/"
+#define IMAGERY_URL      "http://192.168.44.218:8881/google_satellite_no_hybrid/{z}/{x}/{y}.jpeg"
+// #define ELEVATION_URL    "http://readymap.org/readymap/tiles/1.0.0/116/"
 #define BUILDINGS_URL    "/home/canhdx/TestOSG/data/boston_buildings_utm19.shp"
 #define RESOURCE_LIB_URL "/home/canhdx/TestOSG/data/catalog.xml"
 #define STREETS_URL      "/home/canhdx/TestOSG/data/boston-scl-utm19n-meters.shp"
@@ -51,7 +52,7 @@ OsgEarthRenderer_3D::~OsgEarthRenderer_3D() {}
 void OsgEarthRenderer_3D::initOsgEarthScene() {
     m_map = new osgEarth::Map;
     addImagery();
-    addElevation();
+    // addElevation();
     addBuildings();
     addStreets();
     addParks();
@@ -78,15 +79,15 @@ void OsgEarthRenderer_3D::initOsgEarthScene() {
 }
 
 void OsgEarthRenderer_3D::addImagery() {
-    auto* layer = new osgEarth::TMSImageLayer;
+    auto* layer = new osgEarth::XYZImageLayer;
     layer->setURL(IMAGERY_URL);
     m_map->addLayer(layer);
 }
 
 void OsgEarthRenderer_3D::addElevation() {
-    auto* layer = new osgEarth::TMSElevationLayer;
-    layer->setURL(ELEVATION_URL);
-    m_map->addLayer(layer);
+    // auto* layer = new osgEarth::TMSElevationLayer;
+    // layer->setURL(ELEVATION_URL);
+    // m_map->addLayer(layer);
 }
 
 void OsgEarthRenderer_3D::addBuildings() {
@@ -348,12 +349,17 @@ void OsgEarthRenderer_3D::handleMousePressEvent(QMouseEvent *event) {
     double osgY = (fboH - event->pos().y()) * (vp->height() / (double)fboH);
 
     osgEarth::GeoPoint geo;
+    auto wgs84 = osgEarth::SpatialReference::get("wgs84");
+    double lon, lat;
     auto hit = m_mapNode->getGeoPointUnderMouse(view, osgX, osgY);
 
     if (hit.isValid())
     {
-        double lon, lat;
-        // geo.(lon, lat);
+        hit.transform(wgs84, geo);
+        geo.makeGeographic();
+        lon = geo.x();
+        lat = geo.y();
+
         qDebug() << "Lat:" << lat << "Lon:" << lon;
     }
     else
@@ -370,16 +376,25 @@ void OsgEarthRenderer_3D::handleWheelEvent(QWheelEvent* event) {
     queue->mouseScroll((delta > 0) ? osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN);
 }
 
+void OsgEarthRenderer_3D::setCoordinate(double lat, double lon) {
+    qDebug() << "1";
+    _lat = lat;
+    _lon = lon;
+    qDebug() << "2";
+}
+
 void OsgEarthRenderer_3D::focusBoston() {
+    qDebug() << "3";
     auto manip = dynamic_cast<osgEarth::Util::EarthManipulator*>(m_viewer->getCameraManipulator());
     if (manip) {
+        // Boston: Lat: -71.0763 Lon: 42.34425
         manip->setViewpoint(osgEarth::Viewpoint(
-                                "Boston",   // label
-                                -71.0763,   // longitude
-                                42.34425,   // latitude
+                                "Ha Noi",   // label
+                                _lon,   // longitude
+                                _lat,   // latitude
                                 0,          // altitude (m)
                                 0,          // heading (deg)
-                                -45.0,      // pitch (deg)
+                                -90.0,      // pitch (deg)
                                 5000.0      // range (m)
                                 ), 3.0);    // 3s animation
     }

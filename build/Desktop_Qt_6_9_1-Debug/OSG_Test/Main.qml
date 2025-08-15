@@ -83,6 +83,7 @@ Window {
             fileLoader.active = false
             fileLoader.visible = false
             overlay.opacity = 0
+            mainSwipeView.currentIndex = 1
         }
     }
 }

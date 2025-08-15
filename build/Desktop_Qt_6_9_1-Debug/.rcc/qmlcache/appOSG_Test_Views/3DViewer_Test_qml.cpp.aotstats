@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 35

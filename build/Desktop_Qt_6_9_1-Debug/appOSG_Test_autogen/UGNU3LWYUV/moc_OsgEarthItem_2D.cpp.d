@@ -520,6 +520,7 @@
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/optional \
   /home/canhdx/Setup/VISG/OSG/OSGEarth-3.7/osgearth/install/include/osgEarth/weejobs.h \
   /home/canhdx/TestOSG/2D_Handler/OsgEarthRenderer_2D.h \
+  /home/canhdx/TestOSG/3D_Handler/OsgEarthRenderer_3D.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \

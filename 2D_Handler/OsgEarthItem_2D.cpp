@@ -13,30 +13,34 @@ OsgEarthItem_2D::OsgEarthItem_2D(QQuickItem* parent)
 }
 
 QQuickFramebufferObject::Renderer *OsgEarthItem_2D::createRenderer() const {
-    auto r = new OsgEarthRenderer_2D();
-    const_cast<OsgEarthItem_2D*>(this)->m_renderer = r;
-    return r;
+    auto renderer_2D = new OsgEarthRenderer_2D();
+    const_cast<OsgEarthItem_2D*>(this)->m_renderer_2D = renderer_2D;
+    return renderer_2D;
 }
 
 void OsgEarthItem_2D::mousePressEvent(QMouseEvent* event) {
-    if (m_renderer) {
-        m_renderer->handleMouseEvent(event);
-        m_renderer->handleMousePressEvent(event);
+    if (m_renderer_2D) {
+        m_renderer_2D->handleMouseEvent(event);
+        m_renderer_2D->handleMousePressEvent(event);
     }
     QQuickFramebufferObject::mousePressEvent(event);
 }
 
 void OsgEarthItem_2D::mouseMoveEvent(QMouseEvent* event) {
-    if (m_renderer) m_renderer->handleMouseEvent(event);
+    if (m_renderer_2D) m_renderer_2D->handleMouseEvent(event);
     QQuickFramebufferObject::mouseMoveEvent(event);
 }
 
 void OsgEarthItem_2D::mouseReleaseEvent(QMouseEvent* event) {
-    if (m_renderer) m_renderer->handleMouseEvent(event);
+    if (m_renderer_2D) m_renderer_2D->handleMouseEvent(event);
     QQuickFramebufferObject::mouseReleaseEvent(event);
 }
 
 void OsgEarthItem_2D::wheelEvent(QWheelEvent* event) {
-    if (m_renderer) m_renderer->handleWheelEvent(event);
+    if (m_renderer_2D) m_renderer_2D->handleWheelEvent(event);
     QQuickFramebufferObject::wheelEvent(event);
+}
+
+void OsgEarthItem_2D::focusHanoi() {
+    if (m_renderer_2D) m_renderer_2D->focusHanoi();
 }

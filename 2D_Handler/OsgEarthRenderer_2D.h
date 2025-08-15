@@ -7,6 +7,8 @@
 #include <osgEarth/MapNode>
 #include <osgEarth/FeatureModelLayer>
 
+#include "3D_Handler/OsgEarthRenderer_3D.h"
+
 class OsgEarthRenderer_2D : public QQuickFramebufferObject::Renderer
 {
 public:
@@ -21,10 +23,15 @@ public:
     void handleMousePressEvent(QMouseEvent *event);
     void handleWheelEvent(QWheelEvent* event);
 
+public slots:
+    void focusHanoi();
+
 private:
     osg::ref_ptr<osgViewer::Viewer> m_viewer;
     osg::ref_ptr<osgEarth::Map> m_map;
     osg::ref_ptr<osgEarth::MapNode> m_mapNode;
+
+    OsgEarthRenderer_3D* renderer_3D;
 
     void initOsgEarthScene();
     void addImagery();

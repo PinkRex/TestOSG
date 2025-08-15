@@ -12,6 +12,13 @@ Item {
     }
 
     Button {
+        text: "Focus Ha Noi"
+        anchors.bottom: parent.bottom
+        anchors.right: parent.right
+        onClicked: earthItem.focusHanoi()
+    }
+
+    Button {
         text: "Back to Mode Chooser"
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
